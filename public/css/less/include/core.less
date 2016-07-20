@@ -158,15 +158,33 @@
         min-height: 300px;
         box-sizing: border-box;
         border-radius: 16px;
-        background: #cccccc no-repeat center top;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transition: all 1s;
         position: relative;
+        &.t1{background:url(../img/t1-s.png) no-repeat center center, #f2f2f2;
+          &:hover{
+            background:url(../img/t1-s-h.png) no-repeat center center, #00933d;
+          }
+        }
+        &.t2{background:url(../img/t2-s.png) no-repeat center center, #f2f2f2;
+          &:hover{
+            background:url(../img/t2-s-h.png) no-repeat center center, #00933d;
+          }
+        }
+        &.t3{background:url(../img/t3-s.png) no-repeat center center, #f2f2f2;
+          &:hover{
+            background:url(../img/t3-s-h.png) no-repeat center center, #00933d;
+          }
+        }
+        &.t4{background:url(../img/t4-s.png) no-repeat center center, #f2f2f2;
+          &:hover{
+            background:url(../img/t4-s-h.png) no-repeat center center, #00933d;
+          }
+        }
+
         &:hover {
-          transition: all 1s;
-          background: url(../img/card.PNG) no-repeat center top;
           cursor: pointer;
           z-index: 0;
           p.tarif-name {
@@ -200,14 +218,21 @@
         min-width: 250px;
         box-sizing: border-box;
         border-radius: 16px;
-        background: #cccccc no-repeat center top;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transition: all 1s;
         position: relative;
+        &.t1{background:url(../img/t1.png) no-repeat center right, #f2f2f2;
+          &:hover{
+            background:url(../img/t1-h.png) no-repeat center right, #00933d;
+          }
+        }
+        &.t2{background:url(../img/t2.png) no-repeat center right, #f2f2f2;
+          &:hover{
+            background:url(../img/t2-h.png) no-repeat center right, #00933d;
+          }
+        }
         &:hover {
-          background: @dark-green;
           cursor: pointer;
           p.tarif-name {
             color: #ffffff;

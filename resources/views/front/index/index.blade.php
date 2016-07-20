@@ -44,7 +44,7 @@
                         <div class="block-2">
                             <div class="block">
                                 <div class="emitter"></div>
-                                <div class="hover-block" data-speed="500" data-live="150">
+                                <div class="hover-block t1" data-speed="500" data-live="150">
                                     <p class="tarif-name">5
                                         <span class="text">Мб/сек</span>
                                     </p>
@@ -55,7 +55,7 @@
                             </div>
                             <div class="block">
                                 <div class="emitter"></div>
-                                <div class="hover-block" data-speed="500" data-live="100">
+                                <div class="hover-block t2" data-speed="500" data-live="100">
                                     <p class="tarif-name">10
                                         <span class="text">Мб/сек</span>
                                     </p>
@@ -67,7 +67,7 @@
                         </div>
                         <div class="big-block">
                             <div class="emitter"></div>
-                            <div class="hover-block bigest" data-speed="500" data-live="50" data-time="600">
+                            <div class="hover-block bigest t1" data-speed="500" data-live="50" data-time="600">
                                 <p class="tarif-name">25
                                     <span class="text">Мб/сек</span>
                                 </p>
@@ -82,7 +82,7 @@
                         <div class="block-2">
                             <div class="block">
                                 <div class="emitter"></div>
-                                <div class="hover-block" data-speed="1000" data-live="40" data-time="450">
+                                <div class="hover-block t3" data-speed="1000" data-live="40" data-time="450">
                                     <p class="tarif-name">50
                                         <span class="text">Мб/сек</span>
                                     </p>
@@ -93,7 +93,7 @@
                             </div>
                             <div class="block">
                                 <div class="emitter"></div>
-                                <div class="hover-block" data-speed="1500" data-live="25" data-time="400">
+                                <div class="hover-block t4" data-speed="1500" data-live="25" data-time="400">
                                     <p class="tarif-name">75
                                         <span class="text">Мб/сек</span>
                                     </p>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="big-block">
                             <div class="emitter"></div>
-                            <div class="hover-block bigest" data-speed="1000" data-live="30" data-time="500">
+                            <div class="hover-block bigest t2" data-speed="1000" data-live="30" data-time="500">
                                 <p class="tarif-name">100
                                     <span class="text">Мб/сек</span>
                                 </p>

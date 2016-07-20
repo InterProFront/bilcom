@@ -210,6 +210,30 @@
     min-height: 250px;
     min-width: 250px;
   }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t1 {
+    background: url(../img/t1-s.png) no-repeat center right, #f2f2f2;
+  }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t1:hover {
+    background: url(../img/t1-s-h.png) no-repeat center right, #00933d;
+  }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t2 {
+    background: url(../img/t2-s.png) no-repeat center right, #f2f2f2;
+  }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t2:hover {
+    background: url(../img/t2-s-h.png) no-repeat center right, #00933d;
+  }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t3 {
+    background: url(../img/t3-s.png) no-repeat center right, #f2f2f2;
+  }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t3:hover {
+    background: url(../img/t3-s-h.png) no-repeat center right, #00933d;
+  }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t4 {
+    background: url(../img/t4-s.png) no-repeat center right, #f2f2f2;
+  }
+  .tarifs .grid .col-1-2 .block-2 .hover-block.t4:hover {
+    background: url(../img/t4-s-h.png) no-repeat center right, #00933d;
+  }
   .tarifs .grid .col-1-2 .block-2 .hover-block:hover {
     transition: all 1s;
     background: #39a651;

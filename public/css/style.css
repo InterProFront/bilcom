@@ -168,19 +168,39 @@
   min-height: 300px;
   box-sizing: border-box;
   border-radius: 16px;
-  background: #cccccc no-repeat center top;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  transition: all 1s;
   position: relative;
 }
+.tarifs .grid .block-2 .hover-block.t1 {
+  background: url(../img/t1-s.png) no-repeat center center, #f2f2f2;
+}
+.tarifs .grid .block-2 .hover-block.t1:hover {
+  background: url(../img/t1-s-h.png) no-repeat center center, #00933d;
+}
+.tarifs .grid .block-2 .hover-block.t2 {
+  background: url(../img/t2-s.png) no-repeat center center, #f2f2f2;
+}
+.tarifs .grid .block-2 .hover-block.t2:hover {
+  background: url(../img/t2-s-h.png) no-repeat center center, #00933d;
+}
+.tarifs .grid .block-2 .hover-block.t3 {
+  background: url(../img/t3-s.png) no-repeat center center, #f2f2f2;
+}
+.tarifs .grid .block-2 .hover-block.t3:hover {
+  background: url(../img/t3-s-h.png) no-repeat center center, #00933d;
+}
+.tarifs .grid .block-2 .hover-block.t4 {
+  background: url(../img/t4-s.png) no-repeat center center, #f2f2f2;
+}
+.tarifs .grid .block-2 .hover-block.t4:hover {
+  background: url(../img/t4-s-h.png) no-repeat center center, #00933d;
+}
 .tarifs .grid .block-2 .hover-block:hover {
-  transition: all 1s;
-  background: url(../img/card.PNG) no-repeat center top;
   cursor: pointer;
   z-index: 0;
 }
@@ -209,18 +229,27 @@
   min-width: 250px;
   box-sizing: border-box;
   border-radius: 16px;
-  background: #cccccc no-repeat center top;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  transition: all 1s;
   position: relative;
 }
+.tarifs .grid .big-block .hover-block.t1 {
+  background: url(../img/t1.png) no-repeat center right, #f2f2f2;
+}
+.tarifs .grid .big-block .hover-block.t1:hover {
+  background: url(../img/t1-h.png) no-repeat center right, #00933d;
+}
+.tarifs .grid .big-block .hover-block.t2 {
+  background: url(../img/t2.png) no-repeat center right, #f2f2f2;
+}
+.tarifs .grid .big-block .hover-block.t2:hover {
+  background: url(../img/t2-h.png) no-repeat center right, #00933d;
+}
 .tarifs .grid .big-block .hover-block:hover {
-  background: #379d47;
   cursor: pointer;
 }
 .tarifs .grid .big-block .hover-block:hover p.tarif-name {
