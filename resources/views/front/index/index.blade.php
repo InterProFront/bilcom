@@ -141,7 +141,7 @@
                     <li class="icon play-ic"><img src="/img/icon-1.PNG" alt=""></li>
                     <li class="icon docs-ic"><img src="/img/icon-2.PNG" alt=""></li>
                     <li class="icon media-ic"><img src="/img/icon-3.PNG" alt=""></li>
-                    <li class="icon pc-ic"><img src="/img/icon-4.PNG" alt=""></li>
+                    <li class="icon pc-ic"><img src="/img/icon-4.png" alt=""></li>
                 </ul>
                 <div class="application">
                     <h3 class="title">Заявка на тариф</h3>
