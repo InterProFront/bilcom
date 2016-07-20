@@ -1,0 +1,761 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'), url('../fonts/ubuntu.woff2') format('woff2'), url('../fonts/ubuntu.woff') format('woff'), url('../fonts/ubuntu.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UbuntuBold';
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('../fonts/ubuntubold.woff2') format('woff2'), url('../fonts/ubuntubold.woff') format('woff'), url('../fonts/ubuntubold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrap-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.emitter {
+  position: relative;
+  top: 15px;
+}
+.emitter .particle {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  border-radius: 20%;
+  transition: 1s ease-in;
+}
+.unlimite-int {
+  background: url(../img/lightness.PNG) no-repeat top center, #379d47;
+  box-shadow: 5px 0px 50px rgba(51, 102, 51, 0.5) inset;
+}
+.unlimite-int h1.title {
+  color: #ffffff;
+  font-size: 60px;
+  font-family: UbuntuBold;
+  text-align: center;
+  max-width: 745px;
+  margin: 0 auto;
+  padding-top: 58px;
+  line-height: 73px;
+  text-shadow: 0px 20px 25px rgba(0, 102, 0, 0.8);
+}
+.unlimite-int p.sub-title {
+  color: #ffffff;
+  padding-left: 22px;
+  padding-top: 2px;
+  font-family: Ubuntu;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  max-width: 370px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+.unlimite-int li.plus-item {
+  display: inline-block;
+  position: relative;
+  transition: all 1s;
+}
+.unlimite-int li.plus-item .wrap {
+  position: relative;
+}
+.unlimite-int li.plus-item:hover {
+  transform: translateY(-20px);
+  transition: all 1s;
+}
+.unlimite-int li.plus-item.modem {
+  top: -165px;
+  left: 134px;
+}
+.unlimite-int li.plus-item.modem p.plus-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Ubuntu;
+  position: relative;
+  max-width: 160px;
+  top: -10px;
+  left: 105px;
+}
+.unlimite-int li.plus-item.wifi {
+  top: 43px;
+  left: 235px;
+}
+.unlimite-int li.plus-item.wifi .wifi-1 {
+  position: absolute;
+  top: 50px;
+  left: 8px;
+}
+.unlimite-int li.plus-item.wifi .wifi-1 path {
+  fill: #ffffff !important;
+}
+.unlimite-int li.plus-item.wifi .wifi-1 .wifi {
+  opacity: 0;
+}
+.unlimite-int li.plus-item.wifi p.plus-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Ubuntu;
+  top: -110px;
+  position: relative;
+  max-width: 160px;
+  left: 225px;
+}
+.unlimite-int li.plus-item.media {
+  top: -220px;
+  left: 366px;
+}
+.unlimite-int li.plus-item.media p.plus-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Ubuntu;
+  top: -15px;
+  position: relative;
+  max-width: 161px;
+  left: 95px;
+}
+.tarifs {
+  padding-bottom: 78px;
+}
+.tarifs h2.title-gray {
+  text-align: center;
+  font-size: 60px;
+  font-family: UbuntuBold;
+  padding-top: 40px;
+  color: #333333;
+}
+.tarifs p.sub-title-gray {
+  text-align: center;
+  font-size: 24px;
+  font-family: Ubuntu;
+  padding-top: 20px;
+  color: #999999;
+}
+.tarifs .grid {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 100px 0;
+}
+.tarifs .grid .col-title {
+  font-size: 34px;
+  font-family: UbuntuBold;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  color: #333333;
+}
+.tarifs .grid .block-2 {
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+.tarifs .grid .block-2 .block:first-child {
+  margin-right: 20px;
+}
+.tarifs .grid .block-2 .hover-block {
+  min-width: 210px;
+  min-height: 300px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background: #cccccc no-repeat center top;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  transition: all 1s;
+  position: relative;
+}
+.tarifs .grid .block-2 .hover-block:hover {
+  transition: all 1s;
+  background: url(../img/card.PNG) no-repeat center top;
+  cursor: pointer;
+  z-index: 0;
+}
+.tarifs .grid .block-2 .hover-block:hover p.tarif-name {
+  color: #ffffff;
+}
+.tarifs .grid .block-2 .hover-block:hover .connect {
+  background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+}
+.tarifs .grid .block-2 .hover-block p.tarif-name {
+  font-family: UbuntuBold;
+  font-size: 60px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.tarifs .grid .block-2 .hover-block p.tarif-name span.text {
+  font-size: 24px;
+  position: relative;
+  top: 32px;
+  left: -30px;
+}
+.tarifs .grid .big-block .hover-block {
+  min-height: 250px;
+  min-width: 250px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background: #cccccc no-repeat center top;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  transition: all 1s;
+  position: relative;
+}
+.tarifs .grid .big-block .hover-block:hover {
+  background: #379d47;
+  cursor: pointer;
+}
+.tarifs .grid .big-block .hover-block:hover p.tarif-name {
+  color: #ffffff;
+}
+.tarifs .grid .big-block .hover-block:hover .connect {
+  background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+}
+.tarifs .grid .big-block .hover-block p.tarif-name {
+  font-family: UbuntuBold;
+  font-size: 60px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.tarifs .grid .big-block .hover-block p.tarif-name span.text {
+  font-size: 24px;
+  position: relative;
+  top: 32px;
+  left: -30px;
+}
+.tarifs .wrap-1200:after {
+  content: '';
+  display: block;
+  background: url(../img/pazzle-down-white.PNG);
+  width: 236px;
+  height: 80px;
+  margin-top: 77px;
+  margin-left: 30px;
+  position: absolute;
+}
+button.connect {
+  color: #333333;
+  background: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-family: Ubuntu;
+  border-radius: 18px;
+}
+button.connect:hover {
+  background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+}
+.dont-speed-down {
+  background: #333333;
+}
+.dont-speed-down .speed-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+.dont-speed-down .speed-block .col-1-2:first-child {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.dont-speed-down .speed-block .col-1-2:last-child {
+  padding-left: 0px;
+  margin-left: 16px;
+}
+.dont-speed-down .speed-block p.sub-title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  max-width: 450px;
+  font-size: 20px;
+  display: inline-block;
+  padding-top: 0px;
+  line-height: 30px;
+}
+.dont-speed-down .speed-block h2.title {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: UbuntuBold;
+  font-weight: normal;
+  padding-top: 38px;
+}
+.individual-tarif {
+  background: #379d47;
+  max-height: 883px;
+  position: relative;
+}
+.individual-tarif .wrap-1200 {
+  background: url(../img/wifi-ind.PNG) no-repeat center 230px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 5;
+}
+.individual-tarif .wrap-1200:before {
+  content: '';
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 60px;
+  top: -60px;
+  position: relative;
+  background: url(../img/pazzle-up-green.PNG) no-repeat;
+  background-position-x: calc(92%);
+}
+.individual-tarif .wrap-1200 h2.title {
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: UbuntuBold;
+}
+.individual-tarif .wrap-1200 p.sub-title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 20px;
+  max-width: 590px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  line-height: 30px;
+}
+.individual-tarif .wrap-1200 .application {
+  max-width: 460px;
+  margin: 55px auto 0;
+  padding: 30px 70px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+  z-index: 5;
+  background: url(../img/ind-back.PNG) no-repeat 30px 0px, #ffffff;
+}
+.individual-tarif .wrap-1200 .application h3.title {
+  font-family: UbuntuBold;
+  font-size: 36px;
+  padding-top: 10px;
+  color: #333333;
+  padding-bottom: 40px;
+}
+.individual-tarif .wrap-1200 .application .row {
+  padding-bottom: 30px;
+  position: relative;
+}
+.individual-tarif .wrap-1200 .application .row .row-name {
+  display: block;
+  font-family: Ubuntu;
+  color: #333333;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.individual-tarif .wrap-1200 .application .row .popup-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Ubuntu;
+}
+.individual-tarif .wrap-1200 .application .row .popup-field:focus,
+.individual-tarif .wrap-1200 .application .row .popup-field:hover {
+  outline: none;
+  border: 1px solid #379d47;
+}
+.individual-tarif .wrap-1200 .application .row .map-button {
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #39a651;
+  top: 40px;
+}
+.individual-tarif .wrap-1200 .application .row.button {
+  text-align: right;
+}
+.individual-tarif .wrap-1200 .application .row.button .send-form {
+  color: #ffffff;
+  font-family: Ubuntu;
+  padding: 15px 25px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  background: #379d47;
+  margin-top: 8px;
+  position: relative;
+  z-index: 5;
+}
+.individual-tarif .wrap-1200 .application .row.button .send-form:hover {
+  cursor: pointer;
+  background: #109d2c;
+}
+.individual-tarif:after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 100%;
+  background: url(../img/circle-bot.PNG) no-repeat center;
+  height: 165px;
+  position: relative;
+  top: -140px;
+  z-index: 1;
+}
+ul.icons-list {
+  position: relative;
+  height: 0;
+}
+ul.icons-list li.icon {
+  display: inline-block;
+  position: absolute;
+  left: 465px;
+  top: 200px;
+}
+ul.icons-list li.icon.pc-ic {
+  transition: 1.5s all;
+}
+ul.icons-list li.icon.docs-ic {
+  transition: 1.5s all;
+}
+ul.icons-list li.icon.media-ic {
+  transition: 1s all;
+}
+ul.icons-list li.icon.play-ic {
+  transition: 0.5s all;
+}
+.cc {
+  position: absolute;
+  left: 6px;
+  top: 26px;
+  z-index: 1;
+}
+.cc .connector {
+  background: url(../img/connector.PNG) no-repeat left top;
+  display: inline-block;
+  width: 114px;
+  height: 18px;
+  margin-left: -0.36em;
+}
+.cc .cable {
+  content: "";
+  background: url(../img/connector-cable.PNG) repeat-x left top;
+  display: inline-block;
+  width: 2px;
+  height: 18px;
+  transition: 1s all;
+}
+.comments-block .title {
+  padding-top: 225px;
+  text-align: center;
+  font-family: UbuntuBold;
+  color: #333333;
+  font-size: 60px;
+}
+.comments-block .grid-comment {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+li.comment-item {
+  max-width: 320px;
+  position: relative;
+}
+li.comment-item .about-commentator {
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: top;
+}
+li.comment-item .about-commentator .image {
+  padding-right: 17px;
+  padding-top: 7px;
+}
+li.comment-item .about-commentator .commentator {
+  padding-top: 53px;
+  max-width: 270px;
+}
+li.comment-item .about-commentator .commentator p.name {
+  font-size: 24px;
+  font-family: UbuntuBold;
+  color: #333333;
+}
+li.comment-item .about-commentator .commentator p.prof {
+  font-family: Ubuntu;
+  color: #999999;
+  padding-top: 10px;
+  max-width: 170px;
+  line-height: 22px;
+}
+li.comment-item .comment {
+  font-family: Ubuntu;
+  font-size: 16px;
+  padding: 30px;
+  background: #f3f3d7;
+  border-radius: 20px;
+  max-width: 320px;
+  box-sizing: border-box;
+  top: -20px;
+  position: relative;
+}
+li.comment-item .comment:before {
+  content: "";
+  display: block;
+  background: url(../img/comment-icon.PNG) no-repeat;
+  width: 32px;
+  height: 24px;
+  position: absolute;
+  top: -23px;
+  left: 77px;
+}
+li.comment-item .comment p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+li.comment-item span.comment-speed {
+  position: absolute;
+  background: url(../img/speed.PNG) no-repeat;
+  font-size: 46px;
+  color: #ffffff;
+  padding-top: 5px;
+  font-family: UbuntuBold;
+  text-align: center;
+  width: 134px;
+  height: 96px;
+  top: 154px;
+  right: -65px;
+}
+li.comment-item span.comment-speed i.small {
+  font-size: 14px;
+  display: block;
+  font-style: normal;
+}
+.col-1-2--first li.comment-item:first-child {
+  left: -120px;
+}
+.col-1-2--first li.comment-item:last-child {
+  left: -55px;
+}
+.col-1-2--last {
+  padding-top: 150px;
+}
+.col-1-2--last ul.comment-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.col-1-2--last li.comment-item {
+  left: 89px;
+}
+.col-1-2--last li.terabite {
+  position: relative;
+  left: 71px;
+  padding-top: 8px;
+  min-width: 385px;
+  box-sizing: border-box;
+  padding-right: 35px;
+}
+.col-1-2--last li.terabite .img-wrap {
+  position: absolute;
+  left: 31px;
+}
+.col-1-2--last li.terabite .ter-text {
+  padding-top: 45px;
+}
+.col-1-2--last li.terabite .ter-text p.title-text {
+  color: #379d47;
+  font-family: UbuntuBold;
+  font-size: 54px;
+  text-align: center;
+}
+.col-1-2--last li.terabite .ter-text p.title-text span.big-text {
+  text-align: center;
+  font-size: 150px;
+  display: block;
+  line-height: 130px;
+}
+.col-1-2--last li.terabite p.sub-text {
+  color: #999999;
+  font-family: Ubuntu;
+  font-size: 18px;
+  max-width: 350px;
+  text-align: center;
+  line-height: 27px;
+  padding-top: 20px;
+}
+header.page-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-left: 61px;
+}
+header.page-head .info-row {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 90px 50px 60px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  background: #ffffff;
+}
+header.page-head .info-row .inf-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+header.page-head .info-row .inf-block .phone {
+  font-family: Ubuntu;
+  font-size: 20px;
+  padding-top: 10px;
+  margin-right: 25px;
+  color: #333333;
+}
+header.page-head .info-row .inf-block .consult label .icon {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background: url(../img/cons-icon.png);
+  position: relative;
+  top: 10px;
+}
+header.page-head .info-row .inf-block .consult label .link {
+  background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #39a651;
+}
+header.page-head .info-row .inf-block .consult label .link:hover {
+  background: linear-gradient(to left, #cccccc, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #cccccc;
+}
+header.page-head .info-row .inf-block .consult label .link:focus {
+  background: linear-gradient(to left, #cccccc, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #cccccc;
+}
+header.page-head .info-row .connect-item {
+  display: inline-block;
+  width: 210px;
+  position: relative;
+  top: -12px;
+  left: -10px;
+}
+header.page-head .info-row .connect-item .connect {
+  position: absolute;
+  background: url(../img/modem-h.GIF) no-repeat 0px 0px;
+  height: 180px;
+  width: 210px;
+}
+header.page-head .info-row .connect-item .connect .link {
+  background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #39a651;
+  margin-top: 38px;
+  margin-left: 18px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  font-family: Ubuntu;
+}
+header.page-head .info-row .connect-item .connect .link:hover {
+  background: linear-gradient(to left, #cccccc, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #cccccc;
+}
+header.page-head .info-row .connect-item .connect .link:focus {
+  background: linear-gradient(to left, #cccccc, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #cccccc;
+}
+header.page-head nav.main-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: url(../img/header_bot.PNG) no-repeat 0px 0px;
+  padding-bottom: 105px;
+}
+header.page-head nav.main-menu ul.menu {
+  display: -ms-flexbox;
+  display: flex;
+}
+header.page-head nav.main-menu ul.menu li.menu-item {
+  padding: 0 25px;
+}
+header.page-head nav.main-menu ul.menu li.menu-item .menu-link {
+  font-family: UbuntuBold;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #39a651;
+}
+header.page-head nav.main-menu ul.menu li.menu-item .menu-link:hover {
+  background: linear-gradient(to left, #cccccc, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #cccccc;
+}
+header.page-head nav.main-menu ul.menu li.menu-item .menu-link:focus {
+  background: linear-gradient(to left, #cccccc, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: #cccccc;
+}
+header.page-head .mobile-menu {
+  display: none;
+}

@@ -1,0 +1,53 @@
+.animation-block {
+    display: inline-block;
+    padding: 60px;
+    background: #cccccc;
+    border-radius: 20px;
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 300px;
+    z-index: 5;
+    position: relative;
+    transition: all 1s;
+}
+
+.block {
+    width: 1000px;
+    margin: 0 auto;
+}
+.animation-block:hover {
+    background:#379d47;
+    transition: all 1s;
+}
+body {
+    background: black;
+}
+#scene:hover .particle{
+    display: block;
+}
+.particle {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: white;
+    border-radius: 20%;
+    transition: 1s ease-in;
+}
+div#emitter {position: relative;top: 20px;}
+
+html,
+body,
+#scene {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: black;
+}
+
+#scene {
+    perspective: 150px; /* the lower this is, the fancier it gets */
+}

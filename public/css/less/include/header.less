@@ -1,0 +1,95 @@
+header.page-head {
+  display: flex;
+  flex-direction: column;
+  margin-left: 61px;
+
+  .info-row {
+    display: flex;
+    padding: 30px 90px 50px 60px;
+    justify-content: space-between;
+    background: #ffffff;
+    .inf-block {
+      display: flex;
+      justify-content: space-between;
+      .phone{
+        font-family: @Ubuntu;
+        font-size: 20px;
+        padding-top: 10px;
+        margin-right: 25px;
+        color: #333333;
+      }
+      .consult{
+        label{
+          .icon{
+            display: inline-block;
+            width: 50px;
+            height: 40px;
+            background: url(../img/cons-icon.png);
+            position: relative;
+            top:10px;
+          }
+          .link{
+
+            .link(@link-color, @link-border, #cccccc, #cccccc);
+          }
+        }
+      }
+    }
+    .connect-item{
+      display: inline-block;
+      width: 210px;
+      position: relative;
+      top:-12px;
+      left: -10px;
+      .connect{
+        position: absolute;
+        background: url(../img/modem-h.GIF)no-repeat 0px 0px ;
+        height: 180px;
+        width: 210px;
+        .link{
+          .link(@link-color, @link-border, #cccccc, #cccccc);
+          margin-top:38px;
+          margin-left: 18px;
+          display: inline-block;
+          vertical-align: top;
+          font-size: 16px;
+          font-family: @Ubuntu;
+        }
+      }
+
+    }
+
+  }
+
+  nav.main-menu {
+    display: flex;
+    justify-content: center;
+    background: url(../img/header_bot.PNG) no-repeat 0px 0px;
+    padding-bottom: 105px;
+    ul.menu {
+      display: flex;
+      li.menu-item{
+        padding: 0 25px;
+        .menu-link{
+          font-family: UbuntuBold;
+          text-transform: uppercase;
+          font-size:18px;
+          .link(@link-color, @link-border, #cccccc, #cccccc);
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+  .mobile-menu{
+    display: none;
+  }
+
+}
