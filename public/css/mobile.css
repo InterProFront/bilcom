@@ -172,6 +172,9 @@
     text-align: center;
     padding-bottom: 80px;
   }
+  .comments-block .title {
+    padding-top: 150px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .tarifs .grid {
@@ -294,57 +297,59 @@
     left: 0;
     width: 100%;
   }
+  .unlimite-int h1.title {
+    line-height: 1.2em;
+    padding-top: 10px;
+  }
+  .unlimite-int h1.title,
+  .tarifs h2.title-gray,
+  .individual-tarif .wrap-1200 h2.title,
+  .comments-block .title {
+    font-size: 32px;
+    padding: 10px 10px 0;
+  }
+  .comments-block .title {
+    padding-top: 90px;
+  }
+  .dont-speed-down .speed-block {
+    padding-top: 90px;
+  }
+  .dont-speed-down .speed-block .col-1-2:first-child {
+    padding-left: 0;
+  }
+  .dont-speed-down .speed-block .col-1-2:last-child {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+  .individual-tarif .wrap-1200 .application {
+    padding: 30px 20px;
+    background: url(../img/ind-back.PNG) no-repeat -2px 19px, #ffffff;
+  }
+  .individual-tarif .wrap-1200 .application .row .map-button {
+    top: 60px;
+  }
+  .individual-tarif .wrap-1200 .application h3.title {
+    font-size: 32px;
+  }
+  .individual-tarif .wrap-1200 .application .cc {
+    left: 24px;
+  }
+  .individual-tarif .wrap-1200 .application .cc .connector {
+    width: 54px;
+    background: url(../img/connector.PNG) no-repeat right top;
+  }
 }
-.unlimite-int h1.title {
-  line-height: 1.2em;
-  padding-top: 10px;
+@media screen and (max-width: 410px) and (max-width: 600px) {
+  .comments-block .title {
+    padding-top: 150px;
+  }
 }
-.unlimite-int h1.title,
-.tarifs h2.title-gray,
-.individual-tarif .wrap-1200 h2.title,
-.comments-block .title {
-  font-size: 32px;
-  padding: 10px 10px 0;
-}
-.comments-block .title {
-  padding-top: 90px;
-}
-.dont-speed-down .speed-block {
-  padding-top: 90px;
-}
-.dont-speed-down .speed-block .col-1-2:first-child {
-  padding-left: 0;
-}
-.dont-speed-down .speed-block .col-1-2:last-child {
-  margin-left: 0;
-  padding: 0 10px;
-}
-.individual-tarif .wrap-1200 .application {
-  padding: 30px 20px;
-  background: url(../img/ind-back.PNG) no-repeat -2px 19px, #ffffff;
-}
-.individual-tarif .wrap-1200 .application .row .map-button {
-  top: 60px;
-}
-.individual-tarif .wrap-1200 .application h3.title {
-  font-size: 32px;
-}
-.individual-tarif .wrap-1200 .application .cc {
-  left: 24px;
-}
-.individual-tarif .wrap-1200 .application .cc .connector {
-  width: 54px;
-  background: url(../img/connector.PNG) no-repeat right top;
-}
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) and (min-width: 319px) {
   .comments-block .title {
     padding-top: 220px;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 321px) {
-  .comments-block .title {
-    padding-top: 220px;
-  }
   .individual-tarif .wrap-1200 .application {
     padding: 30px 20px;
     background: url(../img/ind-back.PNG) no-repeat 30px 0px, #ffffff;
