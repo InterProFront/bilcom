@@ -2,12 +2,14 @@ header.page-head {
   display: flex;
   flex-direction: column;
   margin-left: 61px;
-
+  position: relative;
+  padding-bottom: 120px;
   .info-row {
     display: flex;
     padding: 30px 90px 50px 60px;
     justify-content: space-between;
     background: #ffffff;
+    box-shadow: 0 1px 35px 15px rgba(0, 86, 0, 0.8);
     .inf-block {
       display: flex;
       justify-content: space-between;
@@ -44,8 +46,9 @@ header.page-head {
       .connect{
         position: absolute;
         background: url(../img/modem-h.GIF)no-repeat 0px 0px ;
-        height: 180px;
+        height: 196px;
         width: 210px;
+        z-index: 2;
         .link{
           .link(@link-color, @link-border, #cccccc, #cccccc);
           margin-top:38px;
@@ -64,8 +67,12 @@ header.page-head {
   nav.main-menu {
     display: flex;
     justify-content: center;
+    position: absolute;
+    width: 1200px;
+
     background: url(../img/header_bot.PNG) no-repeat 0px 0px;
-    padding-bottom: 105px;
+    padding-bottom: 155px;
+    left: -29px;
     ul.menu {
       display: flex;
       li.menu-item{

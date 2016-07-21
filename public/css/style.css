@@ -794,6 +794,8 @@ header.page-head {
   -ms-flex-direction: column;
       flex-direction: column;
   margin-left: 61px;
+  position: relative;
+  padding-bottom: 120px;
 }
 header.page-head .info-row {
   display: -ms-flexbox;
@@ -802,6 +804,7 @@ header.page-head .info-row {
   -ms-flex-pack: justify;
       justify-content: space-between;
   background: #ffffff;
+  box-shadow: 0 1px 35px 15px rgba(0, 86, 0, 0.8);
 }
 header.page-head .info-row .inf-block {
   display: -ms-flexbox;
@@ -858,8 +861,9 @@ header.page-head .info-row .connect-item {
 header.page-head .info-row .connect-item .connect {
   position: absolute;
   background: url(../img/modem-h.GIF) no-repeat 0px 0px;
-  height: 180px;
+  height: 196px;
   width: 210px;
+  z-index: 2;
 }
 header.page-head .info-row .connect-item .connect .link {
   background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
@@ -896,8 +900,11 @@ header.page-head nav.main-menu {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  position: absolute;
+  width: 1200px;
   background: url(../img/header_bot.PNG) no-repeat 0px 0px;
-  padding-bottom: 105px;
+  padding-bottom: 155px;
+  left: -29px;
 }
 header.page-head nav.main-menu ul.menu {
   display: -ms-flexbox;
