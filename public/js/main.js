@@ -1,6 +1,6 @@
 var map;
 var geocoder;
-function initMap() {
+window.initMap = function initMap() {
     map = new google.maps.Map( document.getElementById('map_cart'), {
         center: {lat: 43.257487, lng: 76.9392692},
         zoom: 14
@@ -14,7 +14,7 @@ function initMap() {
             $.magnificPopup.close();
         });
     });
-}
+};
 
 $(document).ready(function () {
     $('.map-button').magnificPopup({
