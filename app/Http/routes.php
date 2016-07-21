@@ -30,7 +30,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 	Route::get('/edit/about',   		'BackController@editAbout');
 
 	Route::get('/edit/rollback',		'BackController@editRollback');
-	Route::get('/edit/rollback/{id}',	'BackController@editRollbackItem');
+	Route::get('/edit/comment/{id}',	'BackController@editRollbackItem');
 
 	Route::get('/edit/tarif',			'BackController@editTarif');
 	Route::get('/edit/tarif/{id}',		'BackController@editTarifItem');

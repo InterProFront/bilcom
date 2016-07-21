@@ -1,0 +1,27 @@
+footer.footer{
+  .wrap-1200.foot-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .col-1-4{
+      p.row-text{
+        color: #ffffff;
+        font-family: @Ubuntu;
+        line-height: 24px;
+        a{
+          .link(@dark-green, transparent, #cccccc, transparent);
+        }
+      }
+      &:last-child{
+        p.row-text{
+          a{
+            .link(@dark-green, @dark-green, #cccccc, #cccccc);
+          }
+        }
+
+      }
+    }
+  }
+  background: #333333;
+  padding: 50px 0 120px;
+}

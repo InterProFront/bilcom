@@ -63,31 +63,31 @@
         display: none;
       }
 
-      .mobile-menu{
+      .mobile-menu {
         display: block;
 
-        .menu-button{
+        .menu-button {
           font-family: Ubuntu;
           font-size: 24px;
           color: #39a651;
           display: inline-block;
           padding: 5px 10px;
-          &.clicked{
+          &.clicked {
             color: #ffffff;
             background: #39a651;
           }
         }
-        ul.popup-menu{
-          left:0;
+        ul.popup-menu {
+          left: 0;
           position: absolute;
           width: 100%;
           max-width: 100%;
           padding: 40px 0;
           background: #39a651;
           display: none;
-          li.popup-menu-item{
+          li.popup-menu-item {
             width: 100%;
-            a.menu-link{
+            a.menu-link {
               padding: 10px 0;
               margin: 0 40px;
               color: #ffffff;
@@ -103,9 +103,10 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .col-1-2--last ul.comment-list{
+  .col-1-2--last ul.comment-list {
     align-items: center;
   }
+
   .col-1-2--last {
     padding-top: 30px;
   }
@@ -173,7 +174,7 @@
   }
 
   .comments-block .title {
-      padding-top: 150px;
+    padding-top: 150px;
   }
 }
 
@@ -184,6 +185,38 @@
       align-items: center;
       .col-1-2 {
         padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  footer.footer {
+    .wrap-1200.foot-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .col-1-4 {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  footer.footer {
+    .wrap-1200.foot-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      .col-1-4 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 25px;
       }
     }
   }

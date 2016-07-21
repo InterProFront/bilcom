@@ -1,20 +1,39 @@
-//var map;
-//var geocoder;
-//function initMap() {
-//    map = new google.maps.Map( document.getElementById('map'), {
-//       center: {lat: 43.257487, lng: 76.9392692},
-//       zoom: 14
-//    });
-//    geocoder = new google.maps.Geocoder();
-//    map.addListener('click',function(event){
-//
-//
-//        geocoder.geocode({'latLng': event.latLng},function(result,status){
-//           alert(result[0].formatted_address)
-//        });
-//    });
-//}
+var map;
+var geocoder;
+function initMap() {
+    map = new google.maps.Map( document.getElementById('map_cart'), {
+       center: {lat: 43.257487, lng: 76.9392692},
+       zoom: 14
+    });
+    geocoder = new google.maps.Geocoder();
+
+}
+
 $(document).ready(function () {
+    $('.map-button').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        callbacks: {
+            open: function(){
+                google.maps.event.trigger(map, 'resize');
+                map.addListener('click',function(event){
+                    geocoder.geocode({'latLng': event.latLng},function(result,status){
+                        //alert(result[0].formatted_address)
+                        $('.popup_field[data-field-name="address"]').val(result[0].formatted_address).attr('title',result[0].formatted_address);
+                        $.magnificPopup.close();
+                    });
+                });
+            }
+        }
+    });
+    $('.connect .link').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        callbacks: {
+
+        }
+    });
+
 
     $('.menu-button').on('click', function () {
         if ($(this).hasClass('clicked')) {

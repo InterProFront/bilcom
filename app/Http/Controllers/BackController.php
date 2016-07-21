@@ -45,7 +45,7 @@ class BackController extends Controller {
 	public function editRollbackItem($id){
 		$block = $this->queryAgent->getGroupItem('dom_rollback','comment',$id);
 		return view('back.blocks.groupitems.dom_rollback.comment_edit',[
-			'comment_item' =>  $block
+			'item_comment' =>  $block
 		]);
 	}
 	public function editTarif(){
@@ -57,7 +57,7 @@ class BackController extends Controller {
 	public function editTarifItem($id){
 		$block = $this->queryAgent->getGroupItem('dom_tarifs','tarif_category',$id);
 		return view('back.blocks.groupitems.dom_tarifs.tarif_category_edit',[
-			'tarif_category_item' =>  $block
+			'item_tarif_category' =>  $block
 		]);
 	}
 

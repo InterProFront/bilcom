@@ -6,29 +6,36 @@
             <div class="wrap-1200">
                 @yield('header')
                 <h1 class="title">Безлимитный интернет в офис в Алматы</h1>
-                <p class="sub-title">Реальная скорость от 5 до 100 Мб/сек и безусловно лучшим ценам в Алматы для
-                    юредических лиц</p>
+                <p class="sub-title">{{$static_main_page->unlimit_text_field}}</p>
                 <div class="plus-list">
                     <ul class="list">
-                        <li class="plus-item modem">
-                            <div class="wrap">
-                                <img src="/img/modem.png" alt="">
-                            </div>
-                            <p class="plus-text">Без покупки <br>оборудования</p>
-                        </li>
-                        <li class="plus-item wifi">
-                            <div class="wrap">
-                                @svg('wifi')
-                                <img src="/img/wifi.png" alt="">
-                            </div>
-                            <p class="plus-text">Надежный <br> и стабильный сигнал</p>
-                        </li>
-                        <li class="plus-item media">
-                            <div class="wrap">
-                                <img src="/img/media.png" alt="">
-                            </div>
-                            <p class="plus-text">Тарифы для любых задач</p>
-                        </li>
+                        <?php $i = 0;?>
+                        @foreach($static_main_page->advantage_group as $item)
+                            <?php $i++ ?>
+                            @if($i == 1)
+                                <li class="plus-item modem">
+                                    <div class="wrap">
+                                        <img src="/img/modem.png" alt="">
+                                    </div>
+                                    <p class="plus-text">{{$item->adv_text_field}}</p>
+                                </li>
+                            @elseif($i == 2)
+                                <li class="plus-item wifi">
+                                    <div class="wrap">
+                                        @svg('wifi')
+                                        <img src="/img/wifi.png" alt="">
+                                    </div>
+                                    <p class="plus-text">{{$item->adv_text_field}}</p>
+                                </li>
+                            @elseif($i == 3)
+                                <li class="plus-item media">
+                                    <div class="wrap">
+                                        <img src="/img/media.png" alt="">
+                                    </div>
+                                    <p class="plus-text">{{$item->adv_text_field}}</p>
+                                </li>
+                            @endif
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -37,7 +44,7 @@
         <div class="tarifs">
             <div class="wrap-1200">
                 <h2 class="title-gray">Безлимитные тарифы</h2>
-                <p class="sub-title-gray">-10% при подключении до 25 июля</p>
+                <p class="sub-title-gray">{{$static_main_page->sales_text_field}}</p>
                 <div class="grid">
                     <div class="col-1-2">
                         <div class="col-title">Для малого бизнеса</div>
@@ -126,8 +133,7 @@
                     </div>
                     <div class="col-1-2">
                         <h2 class="title">Скорость не падает</h2>
-                        <p class="sub-title">При любом объеме исходящего и входящего трафика,скорость тарифа остается
-                            прежней.</p>
+                        <p class="sub-title">{{$static_main_page->speed_text_field}}</p>
                     </div>
                 </div>
             </div>
@@ -135,35 +141,34 @@
         <div class="individual-tarif">
             <div class="wrap-1200">
                 <h2 class="title">Индивидуальный тариф</h2>
-                <p class="sub-title">Если вам нужны индивидуальные условия, заполните заявку и наш менеджер свяжется с
-                    вами для обсуждения деталей</p>
+                <p class="sub-title">{{$static_main_page->individual_text_field}}</p>
                 <ul class="icons-list">
                     <li class="icon play-ic"><img src="/img/icon-1.PNG" alt=""></li>
                     <li class="icon docs-ic"><img src="/img/icon-2.PNG" alt=""></li>
                     <li class="icon media-ic"><img src="/img/icon-3.PNG" alt=""></li>
                     <li class="icon pc-ic"><img src="/img/icon-4.png" alt=""></li>
                 </ul>
-                <div class="application">
+                <div class="application" id="application">
                     <h3 class="title">Заявка на тариф</h3>
                     <div class="row">
                         <label class="row-name">Фактический адрес компании</label>
-                        <input type="text" data-field-type="string" data-field-name="address" class="popup-field"
+                        <input type="text" data-field-type="string" data-field-name="address" class="popup-field popup_field"
                                placeholder="Улица, пересечение">
-                        <span class="map-button">Указать <br> на карте</span>
+                        <span href="#map" class="map-button">Указать <br> на карте</span>
                     </div>
                     <div class="row">
                         <label class="row-name">Контактное лицо</label>
-                        <input type="text" data-field-type="string" data-field-name="address" class="popup-field"
+                        <input type="text" data-field-type="string" data-field-name="name" class="popup-field popup_field"
                                placeholder="Имя, должность">
                     </div>
                     <div class="row">
                         <label class="row-name">Номер телефона</label>
-                        <input type="text" data-field-type="string" data-field-name="address" class="popup-field"
+                        <input type="text" data-field-type="string" data-field-name="phone" class="popup-field popup_field"
                                placeholder="+7">
                     </div>
                     <div class="row">
                         <label class="row-name">Желаемая скорость, Мб/сек</label>
-                        <input type="text" data-field-type="string" data-field-name="address" class="popup-field"
+                        <input type="text" data-field-type="string" data-field-name="speed" class="popup-field popup_field"
                                placeholder="до 100 Мб/сек">
                     </div>
                     <div class="row button">
@@ -171,7 +176,7 @@
                             <div class="cable"></div>
                             <div class="connector"></div>
                         </div>
-                        <button class="send-form">Отправить</button>
+                        <button class="send-form send-ask"  data-type-name="application" data-popup-id="application">Отправить</button>
                     </div>
                 </div>
             </div>
@@ -182,68 +187,52 @@
                 <div class="grid-comment">
                     <div class="col-1-2--first">
                         <ul class="comment-list">
-                            <li class="comment-item">
-                                <div class="about-commentator">
-                                    <div class="image">
-                                        <img src="/img/comm2.PNG" alt="" class="avatar">
-                                    </div>
-                                    <div class="commentator">
-                                        <p class="name">Гаушов Рональдбек</p>
-                                        <p class="prof">Предприниматель</p>
-                                    </div>
-                                </div>
-                                <div class="comment">
-                                    <p>Мы использовали для работы популярный 4G-интернет: сигнал пропадал,
-                                        скорость была низкой, модем перегревался и садился.</p>
-                                    <p>Интернет от «Билком» дешевле, быстрее и стабильнее: мы просто пользуемся и не
-                                        вспоминаем, что бывали какие-то сложности.</p>
-                                </div>
-                                <span class="comment-speed">15 <i class="small">МБит</i></span>
-                            </li>
-                            <li class="comment-item">
-                                <div class="about-commentator">
-                                    <div class="image">
-                                        <img src="/img/comm3.PNG" alt="" class="avatar">
-                                    </div>
-                                    <div class="commentator">
-                                        <p class="name">Агент Смит</p>
-                                        <p class="prof">Торговый агент очками виртуальной реальности</p>
-                                    </div>
-                                </div>
-                                <div class="comment-section">
-                                    <div class="comment">
-                                        <p>Нео был очень хорош: он был на шаг впереди, когда нам удавалось
-                                            приблизиться.</p>
-                                        <p>Мы стреляли — и наши пули летели медленно. Как оказалось, у него стоял
-                                            «Билком». Теперь мы тоже поставили 25 мегабит и он перестал быть таким
-                                            шустрым.</p>
-                                    </div>
-
-                                    <span class="comment-speed">25 <i class="small">МБит</i></span>
-                                </div>
-                            </li>
+                            <?php $i = 0 ?>
+                            @foreach($comment as $item)
+                                <?php $i++ ?>
+                                @if( $i <= 2)
+                                    <li class="comment-item">
+                                        <div class="about-commentator">
+                                            <div class="image">
+                                                <img src="/images/{{$item->avatar_image->primary_link}}"
+                                                     alt="{{$item->avatar_image->alt}}" class="avatar">
+                                            </div>
+                                            <div class="commentator">
+                                                <p class="name">{{$item->name_field}}</p>
+                                                <p class="prof">{{$item->prof_field}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment">{!! $item->comment_text_field !!}</div>
+                                        <span class="comment-speed">{{$item->speed_field}} <i
+                                                    class="small">МБит</i></span>
+                                    </li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>
                     <div class="col-1-2--last">
                         <ul class="comment-list">
-                            <li class="comment-item">
-                                <div class="about-commentator">
-                                    <div class="image">
-                                        <img src="/img/comm1.PNG" alt="" class="avatar">
-                                    </div>
-                                    <div class="commentator">
-                                        <p class="name">Дарт Вейдер</p>
-                                        <p class="prof">Верховный главнокомандующий Империи</p>
-                                    </div>
-                                </div>
-                                <div class="comment">
-                                    <p>Когда повстанцы разрушили Звезду Смерти, Империя осознала важность быстрого
-                                        интернета.</p>
-                                    <p>Во время атаки канал зависал, сообщения не уходили, штурмовики не получали
-                                        приказы вовремя. С интернетом «Билком» мы уверны в победе.</p>
-                                </div>
-                                <span class="comment-speed">75 <i class="small">МБит</i></span>
-                            </li>
+                            <?php $i = 0 ?>
+                            @foreach($comment as $item)
+                                <?php $i++ ?>
+                                @if( $i == 3)
+                                    <li class="comment-item">
+                                        <div class="about-commentator">
+                                            <div class="image">
+                                                <img src="/images/{{$item->avatar_image->primary_link}}"
+                                                     alt="{{$item->avatar_image->alt}}" class="avatar">
+                                            </div>
+                                            <div class="commentator">
+                                                <p class="name">{{$item->name_field}}</p>
+                                                <p class="prof">{{$item->prof_field}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment">{!! $item->comment_text_field !!}</div>
+                                        <span class="comment-speed">{{$item->speed_field}} <i
+                                                    class="small">МБит</i></span>
+                                    </li>
+                                @endif
+                            @endforeach
                             <li class="terabite">
                                 <div class="img-wrap">
                                     <img src="/img/350.PNG" alt="" class="ter-350">

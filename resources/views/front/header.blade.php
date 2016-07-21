@@ -20,7 +20,7 @@
             </div>
             <div class="connect-item">
                 <div class="connect">
-                    <a href="" class="link">Подключить интернет</a>
+                    <a href="#connect" class="link">Подключить интернет</a>
                 </div>
             </div>
         </div>

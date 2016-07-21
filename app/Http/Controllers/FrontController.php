@@ -19,6 +19,11 @@ class FrontController extends Controller {
 		return view('front.map.map');
 	}
 	public function getIndex(){
-		return view('front.index.index');
+		$static_main_page = $this->queryAgent->getBlock('static_main_page',[],[]);
+		$comment          = $this->queryAgent->getGroupFlat('dom_rollback','comment',[],[]);
+		return view('front.index.index',[
+			'static_main_page' => $static_main_page,
+			'comment'          => $comment
+		]);
 	}
 }
