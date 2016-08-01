@@ -1,5 +1,5 @@
 @extends('front.layout')
-@include('front.header')
+@include('front.index.header')
 @section('content')
     <section class="content">
         <div class="unlimite-int">
@@ -56,7 +56,7 @@
                                         <span class="text">Мб/сек</span>
                                     </p>
                                     <p class="button-row">
-                                        <button class="connect">Подключить</button>
+                                        <button class="connect" href="#connect_tarif" data-mb="5 Мб/сек">Подключить</button>
                                     </p>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                         <span class="text">Мб/сек</span>
                                     </p>
                                     <p class="button-row">
-                                        <button class="connect">Подключить</button>
+                                        <button class="connect" href="#connect_tarif" data-mb="10 Мб/сек">Подключить</button>
                                     </p>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@
                                     <span class="text">Мб/сек</span>
                                 </p>
                                 <p class="button-row">
-                                    <button class="connect">Подключить</button>
+                                    <button class="connect" href="#connect_tarif" data-mb="25 Мб/сек">Подключить</button>
                                 </p>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                                         <span class="text">Мб/сек</span>
                                     </p>
                                     <p class="button-row">
-                                        <button class="connect">Подключить</button>
+                                        <button class="connect" href="#connect_tarif" data-mb="50 Мб/сек">Подключить</button>
                                     </p>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
                                         <span class="text">Мб/сек</span>
                                     </p>
                                     <p class="button-row">
-                                        <button class="connect">Подключить</button>
+                                        <button class="connect" href="#connect_tarif" data-mb="75 Мб/сек">Подключить</button>
                                     </p>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                                     <span class="text">Мб/сек</span>
                                 </p>
                                 <p class="button-row">
-                                    <button class="connect">Подключить</button>
+                                    <button class="connect" href="#connect_tarif" data-mb="100 Мб/сек">Подключить</button>
                                 </p>
                             </div>
                         </div>

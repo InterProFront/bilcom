@@ -8,7 +8,18 @@ function initMap() {
     geocoder = new google.maps.Geocoder();
 
 }
+$(document).on('scroll',function(){
+    $('.step-item').each(function(i){
+        if($(document).scrollTop() >= $('.how-to-connect .page-title').offset().top - 200){
+            if(i == 1){
+                $(this).animate({right: 0},3000,'easeInOutElastic',function(){});
+            }else{
+                $(this).animate({left: 0},3000,'easeInOutElastic',function(){});
+            }
 
+        }
+    });
+});
 $(document).ready(function () {
     $('.map-button').magnificPopup({
         type: 'inline',
@@ -28,12 +39,31 @@ $(document).ready(function () {
             }
         }
     });
+
+
+    //элемент не на экране
+
+
+
+
+
+
     $('.connect .link').magnificPopup({
         type: 'inline',
         midClick: true,
         callbacks: {
 
         }
+    });
+    $('button.connect').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        callbacks: {
+            close: function(){
+            }
+        }
+    }).on('click',function(){
+        $('#connect_tarif .popup_field[data-field-name="speed"]').val( $(this).data('mb') );
     });
 
 
@@ -114,7 +144,16 @@ $(document).ready(function () {
             $('.cable').css('width', '2px');
         }
     );
-
+    $('.connect-item').hover(
+        function () {
+            $('.cable-right').css('width', '50px');
+        },
+        function () {
+            $('.cable-right').css('width', '5px');
+        }
+    ).on('click',function(){
+        $('.application-block').slideToggle();
+    });
     $(window).on('scroll', function () {
         setTimeout(function () {
 

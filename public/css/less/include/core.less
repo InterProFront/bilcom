@@ -4,10 +4,14 @@
   list-style-type: none;
   text-decoration: none;
 }
+body{
+  overflow-x: hidden;
+}
 .wrapper {
   width: 100%;
   margin: 0 auto;
 }
+
 .wrap-1200 {
   max-width: 1200px;
   margin: 0 auto;
@@ -25,7 +29,8 @@
     transition: 1s ease-in;
   }
 }
-.overlay{
+
+.overlay {
   display: none;
 }
 
@@ -61,7 +66,7 @@
     display: inline-block;
     position: relative;
     transition: all 1s;
-    .wrap{
+    .wrap {
       position: relative;
     }
     &:hover {
@@ -166,24 +171,28 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        &.t1{background:url(../img/t1-s.png) no-repeat center center, #f2f2f2;
-          &:hover{
-            background:url(../img/t1-s-h.png) no-repeat center center, #00933d;
+        &.t1 {
+          background: url(../img/t1-s.png) no-repeat center center, #f2f2f2;
+          &:hover {
+            background: url(../img/t1-s-h.png) no-repeat center center, #00933d;
           }
         }
-        &.t2{background:url(../img/t2-s.png) no-repeat center center, #f2f2f2;
-          &:hover{
-            background:url(../img/t2-s-h.png) no-repeat center center, #00933d;
+        &.t2 {
+          background: url(../img/t2-s.png) no-repeat center center, #f2f2f2;
+          &:hover {
+            background: url(../img/t2-s-h.png) no-repeat center center, #00933d;
           }
         }
-        &.t3{background:url(../img/t3-s.png) no-repeat center center, #f2f2f2;
-          &:hover{
-            background:url(../img/t3-s-h.png) no-repeat center center, #00933d;
+        &.t3 {
+          background: url(../img/t3-s.png) no-repeat center center, #f2f2f2;
+          &:hover {
+            background: url(../img/t3-s-h.png) no-repeat center center, #00933d;
           }
         }
-        &.t4{background:url(../img/t4-s.png) no-repeat center center, #f2f2f2;
-          &:hover{
-            background:url(../img/t4-s-h.png) no-repeat center center, #00933d;
+        &.t4 {
+          background: url(../img/t4-s.png) no-repeat center center, #f2f2f2;
+          &:hover {
+            background: url(../img/t4-s-h.png) no-repeat center center, #00933d;
           }
         }
 
@@ -194,9 +203,12 @@
             color: #ffffff;
           }
           .connect {
-            background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
-            cursor: pointer;
-            box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+            display: block;
+            &:hover {
+              background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+              cursor: pointer;
+              box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+            }
           }
         }
         p.tarif-name {
@@ -225,14 +237,16 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        &.t1{background:url(../img/t1.png) no-repeat center right, #f2f2f2;
-          &:hover{
-            background:url(../img/t1-h.png) no-repeat center right, #00933d;
+        &.t1 {
+          background: url(../img/t1.png) no-repeat center right, #f2f2f2;
+          &:hover {
+            background: url(../img/t1-h.png) no-repeat center right, #00933d;
           }
         }
-        &.t2{background:url(../img/t2.png) no-repeat center right, #f2f2f2;
-          &:hover{
-            background:url(../img/t2-h.png) no-repeat center right, #00933d;
+        &.t2 {
+          background: url(../img/t2.png) no-repeat center right, #f2f2f2;
+          &:hover {
+            background: url(../img/t2-h.png) no-repeat center right, #00933d;
           }
         }
         &:hover {
@@ -241,9 +255,13 @@
             color: #ffffff;
           }
           .connect {
-            background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
-            cursor: pointer;
-            box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+            display: block;
+            margin: 0 0 25px 25px;
+            &:hover {
+              background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+              cursor: pointer;
+              box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+            }
           }
         }
         p.tarif-name {
@@ -276,20 +294,23 @@
   }
 }
 
-button.connect {
-  color: #333333;
-  background: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  margin-left: 15px;
-  margin-bottom: 25px;
-  font-size: 16px;
-  font-family: @Ubuntu;
-  border-radius: 18px;
-  &:hover {
-    background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
-    cursor: pointer;
-    box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+p.button-row {
+  button.connect {
+    color: #333333;
+    background: #ffffff;
+    display: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    font-family: @Ubuntu;
+    border-radius: 18px;
+    &:hover {
+      background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+      cursor: pointer;
+      color: #111111;
+      box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+    }
   }
 }
 
@@ -502,7 +523,6 @@ ul.icons-list {
   }
 }
 
-
 .comments-block {
   padding-bottom: 120px;
   .title {
@@ -628,19 +648,18 @@ li.comment-item {
     .ter-text {
       padding-top: 45px;
 
-
-    p.title-text {
-      color: @dark-green;
-      font-family: @UbuntuBold;
-      font-size: 54px;
-      text-align: center;
-      span.big-text {
+      p.title-text {
+        color: @dark-green;
+        font-family: @UbuntuBold;
+        font-size: 54px;
         text-align: center;
-        font-size: 150px;
-        display: block;
-        line-height: 130px;
+        span.big-text {
+          text-align: center;
+          font-size: 150px;
+          display: block;
+          line-height: 130px;
+        }
       }
-    }
     }
 
     p.sub-text {
@@ -654,11 +673,6 @@ li.comment-item {
     }
   }
 }
-
-
-
-
-
 
 .application.white-popup {
   max-width: 460px;
@@ -734,6 +748,7 @@ li.comment-item {
   }
 }
 
+@import "pages/how-to-connect";
 
 
 

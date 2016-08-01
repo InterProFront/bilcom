@@ -13,6 +13,7 @@
 @include('front.popups.thank')
 @include('front.popups.connect')
 @include('front.popups.map')
+@include('front.popups.connect_tarif')
 
 <body>
     <div class="wrapper">
@@ -22,6 +23,7 @@
     @yield('thank')
     @yield('map')
     @yield('connect')
+    @yield('connect_tarif')
 </body>
 @yield('scripts')
 </html>

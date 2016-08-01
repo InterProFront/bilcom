@@ -27,6 +27,7 @@ gulp.task('watch',function(){
     gulp.watch('./css/style.less', ['Styles']);
     gulp.watch('./css/mobile.less', ['Mobile']);
     gulp.watch('./css/less/include/*.less', ['Styles']);
+    gulp.watch('./css/less/include/pages/*.less', ['Styles']);
     gulp.watch('./css/less/mobile/*.less', ['Mobile']);
 });
 

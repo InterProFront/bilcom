@@ -1,9 +1,10 @@
-header.page-head {
+header.page-head.index-page {
   display: flex;
   flex-direction: column;
   margin-left: 61px;
   position: relative;
   padding-bottom: 120px;
+  background: url(../img/);
   .info-row {
     display: flex;
     padding: 30px 90px 50px 60px;
@@ -25,13 +26,14 @@ header.page-head {
           .icon{
             display: inline-block;
             width: 50px;
-            height: 40px;
+            height: 44px;
             background: url(../img/cons-icon.png);
             position: relative;
             top:10px;
           }
           .link{
-
+            position: relative;
+            top: -3px;
             .link(@link-color, @link-border, #cccccc, #cccccc);
           }
         }
@@ -86,15 +88,97 @@ header.page-head {
       }
     }
   }
+  .mobile-menu{
+    display: none;
+  }
 
+}
 
+header.page-head {
+  display: flex;
+  flex-direction: column;
+  margin-left: 61px;
+  position: relative;
+  padding-bottom: 125px;
+  background: url(../img/header_bot_st.PNG) no-repeat 0px 0px;
+  .info-row {
+    display: flex;
+    padding: 30px 90px 50px 60px;
+    justify-content: space-between;
+    .inf-block {
+      display: flex;
+      justify-content: space-between;
+      .phone{
+        font-family: @Ubuntu;
+        font-size: 20px;
+        padding-top: 10px;
+        margin-right: 25px;
+        color: #333333;
+      }
+      .consult{
+        label{
+          .icon{
+            display: inline-block;
+            width: 50px;
+            height: 44px;
+            background: url(../img/cons-icon.png);
+            position: relative;
+            top:10px;
+          }
+          .link{
+            position: relative;
+            top: -3px;
+            .link(@link-color, @link-border, #cccccc, #cccccc);
+          }
+        }
+      }
+    }
+    .connect-item{
+      display: inline-block;
+      width: 210px;
+      position: relative;
+      top:-12px;
+      left: -26px;
+      .connect{
+        position: absolute;
+        height: 196px;
+        width: 210px;
+        z-index: 2;
+        .link{
+          .link(@link-color, @link-border, #cccccc, #cccccc);
+          margin-top:38px;
+          margin-left: 18px;
+          display: inline-block;
+          vertical-align: top;
+          font-size: 16px;
+          font-family: @Ubuntu;
+        }
+      }
 
+    }
 
+  }
 
-
-
-
-
+  nav.main-menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1200px;
+    padding-bottom: 155px;
+    left: -29px;
+    ul.menu {
+      display: flex;
+      li.menu-item{
+        padding: 0 25px;
+        .menu-link{
+          font-family: UbuntuBold;
+          text-transform: uppercase;
+          font-size:18px;
+          .link(@link-color, @link-border, #cccccc, #cccccc);
+        }
+      }
+    }
+  }
   .mobile-menu{
     display: none;
   }
