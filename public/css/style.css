@@ -1560,7 +1560,7 @@ footer.footer .wrap-1200.foot-flex .row-1-2:last-child .col-1-2:first-child {
 footer.footer .wrap-1200.foot-flex .row-1-2:last-child .col-1-2:first-child:after {
   content: ' ';
   display: inline-block;
-  background: url(../img/mail.PNG) no-repeat;
+  background: url(../img/mail.png) no-repeat;
   width: 40px;
   height: 30px;
   position: absolute;
