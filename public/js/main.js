@@ -71,7 +71,11 @@ $(document).ready(function () {
         $('#connect_tarif .popup_field[data-field-name="speed"]').val( $(this).data('mb') );
     });
 
-
+    $('.main-menu .menu-item a').each(function(){
+        if($(this).attr('href') == window.location.pathname ){
+            $(this).parent().addClass('active');
+        }
+    });
     $('.menu-button').on('click', function () {
         if ($(this).hasClass('clicked')) {
             $(this).removeClass('clicked');

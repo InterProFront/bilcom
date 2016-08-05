@@ -1832,6 +1832,10 @@ header.page-head.index-page nav.main-menu ul.menu {
 header.page-head.index-page nav.main-menu ul.menu li.menu-item {
   padding: 0 25px;
 }
+header.page-head.index-page nav.main-menu ul.menu li.menu-item.active .menu-link {
+  background: none;
+  color: #333333;
+}
 header.page-head.index-page nav.main-menu ul.menu li.menu-item .menu-link {
   font-family: UbuntuBold;
   text-transform: uppercase;
@@ -1999,6 +2003,10 @@ header.page-head nav.main-menu ul.menu {
 }
 header.page-head nav.main-menu ul.menu li.menu-item {
   padding: 0 25px;
+}
+header.page-head nav.main-menu ul.menu li.menu-item.active .menu-link {
+  background: none;
+  color: #333333;
 }
 header.page-head nav.main-menu ul.menu li.menu-item .menu-link {
   font-family: UbuntuBold;

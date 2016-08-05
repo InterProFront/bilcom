@@ -26,7 +26,7 @@
         </div>
         <nav class="main-menu">
             <ul class="menu">
-                <li class="menu-item active"><a href="/tarifs" class="menu-link">Тарифы</a></li>
+                <li class="menu-item"><a href="/tarifs" class="menu-link">Тарифы</a></li>
                 <li class="menu-item"><a href="/connect" class="menu-link">Как подключиться</a></li>
                 <li class="menu-item"><a href="/about" class="menu-link">О Компании</a></li>
             </ul>
