@@ -28,7 +28,7 @@
                     <div class="block">
                         <div class="emitter"></div>
                         <div class="hover-block t1" data-speed="500" data-live="150">
-                            <p class="tarif-name">{{$tarif_item->tarif_name_field}}
+                            <p class="tarif-name" data-mb="{{$tarif_item->tarif_name_field}}">{{$tarif_item->tarif_name_field}}
                                 <span class="text">Мб/сек</span>
                             </p>
                             <p class="button-row">
@@ -41,8 +41,8 @@
         <div class="big-block">
             <div class="emitter"></div>
             <div class="hover-block bigest t1" data-speed="500" data-live="50" data-time="600">
-                <p class="tarif-name">{{$tarif_item->tarif_name_field}}
-                    <span class="text">Мб/сек</span>
+                <p class="tarif-name" data-mb="{{$tarif_item->tarif_name_field}}">{{$tarif_item->tarif_name_field}}
+                    <span class="text" >Мб/сек</span>
                 </p>
                 <p class="button-row">
                     <button class="connect" href="#connect_tarif" data-mb="{{$tarif_item->tarif_name_field}} Мб/сек">Подключить</button>

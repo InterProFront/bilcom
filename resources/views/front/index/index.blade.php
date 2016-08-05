@@ -1,6 +1,7 @@
 @extends('front.layout')
 @include('front.index.header')
 @section('content')
+    <?php $title = $static_main_page->page_title_field ?>
     <section class="content">
         <div class="unlimite-int">
             <div class="wrap-1200">
@@ -101,7 +102,7 @@
                             <div class="block">
                                 <div class="emitter"></div>
                                 <div class="hover-block t4" data-speed="1500" data-live="25" data-time="400">
-                                    <p class="tarif-name">75
+                                    <p class="tarif-name" data-mb="75">75
                                         <span class="text">Мб/сек</span>
                                     </p>
                                     <p class="button-row">
@@ -113,7 +114,7 @@
                         <div class="big-block">
                             <div class="emitter"></div>
                             <div class="hover-block bigest t2" data-speed="1000" data-live="30" data-time="500">
-                                <p class="tarif-name">100
+                                <p class="tarif-name" data-mb="100">100
                                     <span class="text">Мб/сек</span>
                                 </p>
                                 <p class="button-row">

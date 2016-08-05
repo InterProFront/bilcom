@@ -1,6 +1,7 @@
 @extends('front.layout')
 @include('front.header')
 @section('content')
+    <?php $title = $static_tarifs->page_title_field ?>
     <section class="content">
         <div class="wrap-1200">
             @yield('header')

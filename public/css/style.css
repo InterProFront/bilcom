@@ -235,6 +235,9 @@ body {
   padding-left: 20px;
   padding-top: 5px;
 }
+.tarifs .grid .block-2 .hover-block p.tarif-name[data-mb="75"] {
+  font-size: 72px;
+}
 .tarifs .grid .block-2 .hover-block p.tarif-name span.text {
   font-size: 24px;
   position: relative;
@@ -283,9 +286,18 @@ body {
 }
 .tarifs .grid .big-block .hover-block p.tarif-name {
   font-family: UbuntuBold;
-  font-size: 60px;
+  font-size: 64px;
   padding-left: 20px;
   padding-top: 5px;
+}
+.tarifs .grid .big-block .hover-block p.tarif-name[data-mb="100"] {
+  font-size: 96px;
+}
+.tarifs .grid .big-block .hover-block p.tarif-name[data-mb="100"] span.text {
+  font-size: 24px;
+  position: relative;
+  top: 32px;
+  left: -70px;
 }
 .tarifs .grid .big-block .hover-block p.tarif-name span.text {
   font-size: 24px;
@@ -1025,8 +1037,7 @@ li.comment-item span.comment-speed i.small {
 }
 .tarifs-block-wrap .green-block {
   background: url(../img/big-arrow.png) no-repeat 100px 0px, url(../img/small-arrow.png) no-repeat 80px 0px, url(../img/big-arrow.png) no-repeat 900px 0px, url(../img/small-arrow.png) no-repeat 880px 0px, #40ae49;
-  animation: Arrow 1s infinite ease;
-  background-position: 100px 0, 80px 0, 900px 0, 880px 0;
+  background-position: 100px 35px, 80px 0, 900px 0, 780px 54px;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -1188,9 +1199,12 @@ li.comment-item span.comment-speed i.small {
 }
 .business-connect-item .tarif-category-block .wrap-row .wrap-blocks .block-2 .hover-block p.tarif-name {
   font-family: UbuntuBold;
-  font-size: 60px;
+  font-size: 64px;
   padding-left: 20px;
   padding-top: 5px;
+}
+.business-connect-item .tarif-category-block .wrap-row .wrap-blocks .block-2 .hover-block p.tarif-name[data-mb="75"] {
+  font-size: 72px;
 }
 .business-connect-item .tarif-category-block .wrap-row .wrap-blocks .block-2 .hover-block p.tarif-name span.text {
   font-size: 24px;
@@ -1240,9 +1254,12 @@ li.comment-item span.comment-speed i.small {
 }
 .business-connect-item .tarif-category-block .wrap-row .wrap-blocks .big-block .hover-block p.tarif-name {
   font-family: UbuntuBold;
-  font-size: 60px;
+  font-size: 64px;
   padding-left: 20px;
   padding-top: 5px;
+}
+.business-connect-item .tarif-category-block .wrap-row .wrap-blocks .big-block .hover-block p.tarif-name[data-mb="100"] {
+  font-size: 96px;
 }
 .business-connect-item .tarif-category-block .wrap-row .wrap-blocks .big-block .hover-block p.tarif-name span.text {
   font-size: 24px;
@@ -1700,11 +1717,22 @@ header.page-head.index-page .info-row .inf-block {
       justify-content: space-between;
 }
 header.page-head.index-page .info-row .inf-block .phone {
+  position: relative;
   font-family: Ubuntu;
   font-size: 20px;
   padding-top: 10px;
   margin-right: 25px;
   color: #333333;
+}
+header.page-head.index-page .info-row .inf-block .phone p:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  left: -24px;
+  top: 5px;
+  height: 20px;
+  background: url(../img/head-phone.png) no-repeat;
 }
 header.page-head.index-page .info-row .inf-block .consult label .icon {
   display: inline-block;
@@ -1859,11 +1887,22 @@ header.page-head .info-row .inf-block {
       justify-content: space-between;
 }
 header.page-head .info-row .inf-block .phone {
+  position: relative;
   font-family: Ubuntu;
   font-size: 20px;
   padding-top: 10px;
   margin-right: 25px;
   color: #333333;
+}
+header.page-head .info-row .inf-block .phone p:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  left: -24px;
+  top: 5px;
+  height: 20px;
+  background: url(../img/head-phone.png) no-repeat;
 }
 header.page-head .info-row .inf-block .consult label .icon {
   display: inline-block;

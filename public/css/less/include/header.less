@@ -1,17 +1,18 @@
-
-@media screen and (-webkit-min-device-pixel-ratio:0)
-and (min-resolution:.001dpcm) {
+@media screen and (-webkit-min-device-pixel-ratio: 0)
+and (min-resolution: .001dpcm) {
   header.page-head.index-page {
     nav.main-menu {
       top: 144px;
     }
   }
+
   header.page-head {
     nav.main-menu {
       top: 144px;
     }
   }
 }
+
 header.page-head.index-page {
   display: flex;
   flex-direction: column;
@@ -28,24 +29,38 @@ header.page-head.index-page {
     .inf-block {
       display: flex;
       justify-content: space-between;
-      .phone{
+      .phone {
+        position: relative;
+        p {
+          &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 20px;
+            left: -24px;
+            top:5px;
+            height: 20px;
+            background: url(../img/head-phone.png) no-repeat;
+          }
+        }
+
         font-family: @Ubuntu;
         font-size: 20px;
         padding-top: 10px;
         margin-right: 25px;
         color: #333333;
       }
-      .consult{
-        label{
-          .icon{
+      .consult {
+        label {
+          .icon {
             display: inline-block;
             width: 50px;
             height: 44px;
             background: url(../img/cons-icon.png);
             position: relative;
-            top:10px;
+            top: 10px;
           }
-          .link{
+          .link {
             position: relative;
             top: -3px;
             .link(@link-color, @link-border, #cccccc, #cccccc);
@@ -53,21 +68,21 @@ header.page-head.index-page {
         }
       }
     }
-    .connect-item{
+    .connect-item {
       display: inline-block;
       width: 210px;
       position: relative;
-      top:-12px;
+      top: -12px;
       left: -10px;
-      .connect{
+      .connect {
         position: absolute;
-        background: url(../img/modem-h.GIF)no-repeat 0px 0px ;
+        background: url(../img/modem-h.GIF) no-repeat 0px 0px;
         height: 196px;
         width: 210px;
         z-index: 2;
-        .link{
+        .link {
           .link(@link-color, @link-border, #cccccc, #cccccc);
-          margin-top:38px;
+          margin-top: 38px;
           margin-left: 18px;
           display: inline-block;
           vertical-align: top;
@@ -91,18 +106,18 @@ header.page-head.index-page {
     left: -29px;
     ul.menu {
       display: flex;
-      li.menu-item{
+      li.menu-item {
         padding: 0 25px;
-        .menu-link{
+        .menu-link {
           font-family: UbuntuBold;
           text-transform: uppercase;
-          font-size:18px;
+          font-size: 18px;
           .link(@link-color, @link-border, #cccccc, #cccccc);
         }
       }
     }
   }
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
 
@@ -122,24 +137,37 @@ header.page-head {
     .inf-block {
       display: flex;
       justify-content: space-between;
-      .phone{
+      .phone {
+        position: relative;
+        p {
+          &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 20px;
+            left: -24px;
+            top:5px;
+            height: 20px;
+            background: url(../img/head-phone.png) no-repeat;
+          }
+        }
         font-family: @Ubuntu;
         font-size: 20px;
         padding-top: 10px;
         margin-right: 25px;
         color: #333333;
       }
-      .consult{
-        label{
-          .icon{
+      .consult {
+        label {
+          .icon {
             display: inline-block;
             width: 50px;
             height: 44px;
             background: url(../img/cons-icon.png);
             position: relative;
-            top:10px;
+            top: 10px;
           }
-          .link{
+          .link {
             position: relative;
             top: -3px;
             .link(@link-color, @link-border, #cccccc, #cccccc);
@@ -147,20 +175,20 @@ header.page-head {
         }
       }
     }
-    .connect-item{
+    .connect-item {
       display: inline-block;
       width: 210px;
       position: relative;
-      top:-12px;
+      top: -12px;
       left: -26px;
-      .connect{
+      .connect {
         position: absolute;
         height: 196px;
         width: 210px;
         z-index: 2;
-        .link{
+        .link {
           .link(@link-color, @link-border, #cccccc, #cccccc);
-          margin-top:38px;
+          margin-top: 38px;
           margin-left: 18px;
           display: inline-block;
           vertical-align: top;
@@ -182,18 +210,18 @@ header.page-head {
     left: -29px;
     ul.menu {
       display: flex;
-      li.menu-item{
+      li.menu-item {
         padding: 0 25px;
-        .menu-link{
+        .menu-link {
           font-family: UbuntuBold;
           text-transform: uppercase;
-          font-size:18px;
+          font-size: 18px;
           .link(@link-color, @link-border, #cccccc, #cccccc);
         }
       }
     }
   }
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
 
