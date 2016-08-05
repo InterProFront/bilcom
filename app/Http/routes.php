@@ -14,6 +14,8 @@
 
 Route::get('/','FrontController@getIndex');
 Route::get('/connect','FrontController@getConnect');
+Route::get('/tarifs','FrontController@getTarifs');
+Route::get('/about','FrontController@getAbout');
 
 
 Route::controllers([

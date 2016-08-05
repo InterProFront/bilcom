@@ -1,0 +1,422 @@
+.tarifs-block-wrap {
+  h1.title {
+    color: #333333;
+    text-align: center;
+    margin: 35px auto 0;
+    font-size: 60px;
+    line-height: 72px;
+    font-family: @UbuntuBold;
+    font-weight: normal;
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+  .green-block {
+    background: url(../img/big-arrow.png) no-repeat 100px 0px,
+                url(../img/small-arrow.png) no-repeat 80px 0px,
+                url(../img/big-arrow.png) no-repeat 900px 0px,
+                url(../img/small-arrow.png) no-repeat 880px 0px,#40ae49;
+    animation: Arrow 1s infinite ease;
+    background-position: 100px 0, 80px 0, 900px 0, 880px 0;
+
+
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    .sub-title {
+      font-family: @Ubuntu;
+      font-size: 20px;
+      color: #ffffff;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 30px;
+    }
+  }
+  .plus-block {
+    display: flex;
+    vertical-align: top;
+    margin: 0 auto;
+    max-width: 1000px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 40px 80px 20px 80px;
+    .plus-item {
+      display: flex;
+      .img-wrap {
+        padding-right: 20px;
+        img {
+
+        }
+      }
+      .text-wrap {
+        max-width: 100px;
+        padding-top: 25px;
+        p {
+          color: #666666;
+          font-size: 16px;
+          font-family: @Ubuntu;
+        }
+      }
+    }
+  }
+}
+
+.business-connect-item {
+  max-width: 980px;
+  margin: 50px auto 0;
+  .tarif-category-block {
+    padding-bottom: 90px;
+    .category-name {
+      color: #333333;
+      font-size: 48px;
+      font-family: @UbuntuBold;
+      margin-bottom: 25px;
+    }
+    .subtitle-block {
+      max-width: 850px;
+      margin-bottom: 0;
+      p {
+        font-size: 24px;
+        line-height: 38px;
+        font-family: @Ubuntu;
+        color: #666666;
+      }
+    }
+    .facts{
+      padding-right: 60px;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      .tarif-fact {
+        display: flex;
+        margin-top: 50px;
+        .img-wrap {
+          margin-right: 30px;
+          margin-bottom: 20px;
+          .fact-img {
+
+          }
+        }
+        .text-wrap {
+          padding-top: 35px;
+          p {
+            color: #666666;
+            font-family: @Ubuntu;
+            line-height: 24px;
+            max-width: 270px;
+          }
+        }
+      }
+    }
+    .wrap-row {
+      display: flex;
+      justify-content: space-between;
+      .wrap-blocks {
+        max-width: 640px;
+        .block-2 {
+          display: flex;
+          padding-bottom: 20px;
+          .block:first-child {
+            margin-right: 20px;
+          }
+          .hover-block {
+            min-width: 270px;
+            min-height: 300px;
+            box-sizing: border-box;
+            border-radius: 16px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            &.t1 {
+              background: url(../img/t1-s.png) no-repeat center calc(100% + 28px), #f2f2f2;
+              &:hover {
+                background: url(../img/t1-s-h.png) no-repeat center calc(100% + 28px), #00933d;
+              }
+            }
+            &.t2 {
+              background: url(../img/t2-s.png) no-repeat center calc(100% + 28px), #f2f2f2;
+              &:hover {
+                background: url(../img/t2-s-h.png) no-repeat center calc(100% + 28px), #00933d;
+              }
+            }
+            &.t3 {
+              background: url(../img/t3-s.png) no-repeat center calc(100% + 28px), #f2f2f2;
+              &:hover {
+                background: url(../img/t3-s-h.png) no-repeat center calc(100% + 28px), #00933d;
+              }
+            }
+            &.t4 {
+              background: url(../img/t4-s.png) no-repeat center calc(100% + 28px), #f2f2f2;
+              &:hover {
+                background: url(../img/t4-s-h.png) no-repeat center calc(100% + 28px), #00933d;
+              }
+            }
+
+            &:hover {
+              cursor: pointer;
+              z-index: 0;
+              p.tarif-name {
+                color: #ffffff;
+              }
+              .connect {
+                display: block;
+                &:hover {
+                  background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+                  cursor: pointer;
+                  box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+                }
+              }
+            }
+            p.tarif-name {
+              font-family: @UbuntuBold;
+              font-size: 60px;
+              padding-left: 20px;
+              padding-top: 5px;
+
+              span.text {
+                font-size: 24px;
+                position: relative;
+                top: 32px;
+                left: -30px;
+              }
+
+            }
+          }
+        }
+        .big-block {
+          .hover-block {
+            min-height: 250px;
+            min-width: 250px;
+            box-sizing: border-box;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            &.t1 {
+              background: url(../img/t1.png) no-repeat bottom right, #f2f2f2;
+              &:hover {
+                background: url(../img/t1-h.png) no-repeat bottom right, #00933d;
+              }
+            }
+            &.t2 {
+              background: url(../img/t2.png) no-repeat bottom right, #f2f2f2;
+              &:hover {
+                background: url(../img/t2-h.png) no-repeat bottom right, #00933d;
+              }
+            }
+            &:hover {
+              cursor: pointer;
+              p.tarif-name {
+                color: #ffffff;
+              }
+              .connect {
+                display: block;
+                margin: 0 0 25px 25px;
+                &:hover {
+                  background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+                  cursor: pointer;
+                  box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+                }
+              }
+            }
+            p.tarif-name {
+              font-family: @UbuntuBold;
+              font-size: 60px;
+              padding-left: 20px;
+              padding-top: 5px;
+
+              span.text {
+                font-size: 24px;
+                position: relative;
+                top: 32px;
+                left: -30px;
+              }
+
+            }
+
+          }
+        }
+      }
+      .right-block-wrap {
+        max-width: 270px;
+        margin-right: 90px;
+        .have-a-question {
+          background: #f3f3d7;
+          border-radius: 10px;
+          box-sizing: border-box;
+          padding: 0 30px 25px;
+          .img-wrap {
+            position: relative;
+            height: 145px;
+            img {
+              position: absolute;
+              top: -25px;
+              left: -5px;
+            }
+          }
+          h4.mini-title {
+            font-size: 18px;
+            font-family: @UbuntuBold;
+            color: #333333;
+            font-weight: normal;
+            padding-bottom: 5px;
+          }
+          .consult-text {
+            color: #666666;
+            font-family: @Ubuntu;
+            font-size: 14px;
+            line-height: 24px;
+            padding-bottom: 8px;
+          }
+          .ask-a-question {
+            color: #ffffff;
+            font-family: @Ubuntu;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            background: @dark-green;
+            margin-top: 12px;
+            position: relative;
+            z-index: 5;
+            &:hover {
+              cursor: pointer;
+              background: #109d2c;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+p.button-row {
+  button.connect {
+    color: #333333;
+    background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+    display: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    font-family: @Ubuntu;
+    border-radius: 18px;
+    &:hover {
+      background: linear-gradient(to bottom, #ffe554, #ffcc01 100%);
+      cursor: pointer;
+      color: #111111;
+      box-shadow: 0px 5px 15px 0 rgba(0, 102, 0, 0.5);
+    }
+  }
+}
+
+.free-connect {
+  .connect-title {
+    font-size: 36px;
+    text-align: center;
+    font-family: @UbuntuBold;
+    color: #333333;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 40px;
+  }
+  .connect-row {
+    margin: 40px auto 80px;
+    max-width: 270px;
+    text-align: center;
+
+    .connect-item {
+      color: #ffffff;
+      font-family: @Ubuntu;
+      padding: 13px 20px;
+      font-size: 20px;
+      border-radius: 30px;
+      border: none;
+      background: @dark-green;
+      margin-top: 12px;
+      position: relative;
+      z-index: 5;
+      &:hover {
+        cursor: pointer;
+        background: #109d2c;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.free-3-days {
+  padding-top: 40px;
+  background: url(../img/steps_free_connect.png) no-repeat center 20px;
+  padding-bottom: 60px;
+
+  .title {
+    margin: 0 auto;
+    color: #333333;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    max-width: 500px;
+    font-family: @UbuntuBold;
+  }
+  .row-to-connector {
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    .connect-item {
+      color: #ffffff;
+      font-family: @Ubuntu;
+      padding:12px 45px;
+      font-size: 20px;
+      border-radius: 30px;
+      border: none;
+      background: @dark-green;
+      margin-top: 12px;
+      position: relative;
+      z-index: 5;
+      &:hover {
+        cursor: pointer;
+        background: #109d2c;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    .cc-right {
+      position: absolute;
+      right: 0;
+      top: 52px;
+      z-index: 1;
+      .connector-right {
+        background: url(../img/right_connector.PNG) no-repeat left top;
+        display: inline-block;
+        width: 75px;
+        height: 18px;
+        margin-left: -.36em;
+      }
+      .cable-right {
+        content: "";
+        background: #cccccc;
+        top: -11px;
+        margin-left: -.36em;
+        position: relative;
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        transition: 1s all;
+      }
+    }
+  }
+
+}

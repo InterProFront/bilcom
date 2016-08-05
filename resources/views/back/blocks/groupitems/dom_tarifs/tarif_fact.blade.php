@@ -1,6 +1,7 @@
 <li class="group" data-group-id="{{$item_tarif_fact->id_field}}">
     <div class="title-block">
         <label class="group-title">
+            Особенность тарифов
         </label>
         <button type="button" class="any_delete" data-block="dom_tarifs" data-group="tarif_fact" data-entity="groupitem"
                 data-item-id="{{$item_tarif_fact->id_field}}" data-descr="Эл. первой группы"> Удалить

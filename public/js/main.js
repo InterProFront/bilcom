@@ -40,7 +40,12 @@ $(document).ready(function () {
         }
     });
 
-
+    $('.consult-button').on('click', function(e) {
+        // Открываем чат и фокусируем поле ввода
+        e.preventDefault();
+        Chatra('show',true);
+        Chatra('openChat',true);
+    });
     //элемент не на экране
 
 

@@ -9,52 +9,32 @@
             <div class="how-to-connect">
                 <h1 class="page-title">{{$static_connect->title_field}}</h1>
                 <p class="sub-title"> {{ $static_connect->connect_text_field }}</p>
-                {{--@foreach($static_connect->steps_group as $item)--}}
-                {{--<li class="step-item">--}}
-                {{--<p>{{$item->step_title_field}}</p>--}}
-                {{--<p>{!! $item->step_text_field !!}</p>--}}
-                {{--</li>--}}
-                {{--@endforeach--}}
+
                 <ul class="step-block">
-                    <li class="step-item">
-                        <div class="image-wrap">
-                            @svg('step_1')
-                        </div>
-                        <div class="step-info-block">
-                            <span class="number-of-step">1</span>
-                            <p class="step-title">Отправьте заявку</p>
-                            <div class="step-text">
-                                <p>Укажите желаемый тариф и отправьте заявку. Менеджер свяжется с вами в течение 10
-                                    минут.</p>
+                    <?php $i = 0; ?>
+                    @foreach($static_connect->steps_group as $item)
+                        <?php $i++;?>
+                        <li class="step-item">
+                            <div class="image-wrap">
+                                @if($i == 1)
+                                    @svg('step_1')
+                                @elseif( $i == 2)
+                                    @svg('step_2')
+                                @else
+                                    @svg('step_3')
+                                @endif
+
                             </div>
-                        </div>
-                    </li>
-                    <li class="step-item ">
-                        <div class="image-wrap">
-                            @svg('step_2')
-                        </div>
-                        <div class="step-info-block">
-                            <span class="number-of-step">2</span>
-                            <p class="step-title">Отправьте копии документов</p>
-                            <div class="step-text">
-                                <p>Чтобы ускорить подключение, вышлите копию и свидетельство о регистрации и реквизиты
-                                    компании. Мы вышлем подготовленный договор.</p>
+                            <div class="step-info-block">
+                                <span class="number-of-step">1</span>
+                                <p class="step-title">Отправьте заявку</p>
+                                <div class="step-text">
+                                    <p>Укажите желаемый тариф и отправьте заявку. Менеджер свяжется с вами в течение 10
+                                        минут.</p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="step-item ">
-                        <div class="image-wrap">
-                            @svg('step_3')
-                        </div>
-                        <div class="step-info-block">
-                            <span class="number-of-step">3</span>
-                            <p class="step-title">Заключите договор</p>
-                            <div class="step-text">
-                                <p>Бесплатное подключение производится после заключения соглашения и оплаты выбранного
-                                    тарифа.</p>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    @endforeach
                 </ul>
                 <div class="free-3-days">
                     <h2 class="title">Подключение — бесплатно в течении 3 рабочих дней</h2>

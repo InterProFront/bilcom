@@ -1,6 +1,7 @@
 <li class="group" data-group-id="{{$item_tarif_adv->id_field}}">
     <div class="title-block">
         <label class="group-title">
+            Преимущества Билком
         </label>
         <button type="button" class="any_delete" data-block="dom_tarifs" data-group="tarif_adv" data-entity="groupitem"
                 data-item-id="{{$item_tarif_adv->id_field}}" data-descr="Эл. первой группы"> Удалить

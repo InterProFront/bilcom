@@ -10,7 +10,7 @@ return [
     ],
     'static_about_company_head' => [
         'sizes' => [
-            ['width' => 700, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 580, 'height' => null, 'sufix' => 'primary'],
             ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
@@ -26,7 +26,7 @@ return [
     ],
     'tarif_adv_icon' => [
         'sizes' => [
-            ['width' => 700, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'primary'],
             ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
@@ -50,7 +50,7 @@ return [
     ],
     'tarif_fact_fact' => [
         'sizes' => [
-            ['width' => 700, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 130, 'height' => null, 'sufix' => 'primary'],
             ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],

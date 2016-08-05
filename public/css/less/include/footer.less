@@ -17,9 +17,21 @@ footer.footer {
         padding-top: 50px;
         .col-1-2{
           &:first-child{
-            padding-right: 220px;
+            margin-right: 220px;
+            position: relative;
+            &:after{
+              content: ' ';
+              display: inline-block;
+              background: url(../img/mail.PNG) no-repeat;
+              width: 40px;
+              height: 30px;
+              position: absolute;
+              top: 5px;
+              right: -50px;
+            }
           }
           p.row-text {
+
             color: #ffffff;
             font-family: @Ubuntu;
             line-height: 24px;
@@ -41,6 +53,17 @@ footer.footer {
           }
           &:last-child {
             p.row-text {
+              position: relative;
+              &:before{
+                content: ' ';
+                display: inline-block;
+                background: url(../img/phone.PNG) no-repeat;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: -25px;
+                left: -30px;
+              }
               font-size: 43px;
               a {
                 .link(@dark-green, @dark-green, #cccccc, #cccccc);

@@ -50,7 +50,7 @@ return [
                 'stringfields' => ['adv_text']
             ],
             'tarif_category' => [
-                'strinfields' => ['tarif_title'],
+                'stringfields' => ['tarif_title'],
                 'textfields' => ['about_tarif'],
             ],
             'tarif' => [

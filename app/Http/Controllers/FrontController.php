@@ -30,4 +30,16 @@ class FrontController extends Controller {
 			'static_connect' => $static_connect,
 		]);
 	}
+	public function getTarifs(){
+		$static_tarifs = $this->queryAgent->getBlock('dom_tarifs',[],[]);
+		return view('front.tarifs.tarifs',[
+			'static_tarifs' => $static_tarifs,
+		]);
+	}
+	public function getAbout(){
+		$static_about = $this->queryAgent->getBlock('static_about_company',[],[]);
+		return view('front.about.about',[
+			'static_company' => $static_about,
+		]);
+	}
 }

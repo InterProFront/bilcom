@@ -4,6 +4,12 @@
         <div class="field-wrap ">
             <label class="input-file">
             </label>
+            <input type="text" data-field-type="string" data-field-name="page_title" data-block="dom_tarifs"
+                   class="input block_field" value="{{$dom_tarifs->page_title_field}}" placeholder="Строка">
+        </div>
+        <div class="field-wrap ">
+            <label class="input-file">
+            </label>
             <input type="text" data-field-type="string" data-field-name="title" data-block="dom_tarifs"
                    class="input block_pre_field" value="{{$dom_tarifs->title_field}}" placeholder="Заголовок">
         </div>
@@ -19,12 +25,7 @@
             <input type="text" data-field-type="string" data-field-name="free_connect" data-block="dom_tarifs"
                    class="input block_field" value="{{$dom_tarifs->free_connect_field}}" placeholder="Строка">
         </div>
-        <div class="field-wrap ">
-            <label class="input-file">
-            </label>
-            <input type="text" data-field-type="string" data-field-name="page_title" data-block="dom_tarifs"
-                   class="input block_field" value="{{$dom_tarifs->page_title_field}}" placeholder="Строка">
-        </div>
+
         <div class="field-wrap ">
             <label class="input-file">
             </label>
