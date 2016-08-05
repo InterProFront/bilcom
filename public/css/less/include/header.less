@@ -63,7 +63,7 @@ header.page-head.index-page {
           .link {
             position: relative;
             top: -3px;
-            .link(@link-color, @link-border, #cccccc, #cccccc);
+            .link(@link-color, @link-border, @hover-color, @hover-border);
           }
         }
       }
@@ -81,7 +81,7 @@ header.page-head.index-page {
         width: 210px;
         z-index: 2;
         .link {
-          .link(@link-color, @link-border, #cccccc, #cccccc);
+          .link(@link-color, @link-border, @hover-color, @hover-border);
           margin-top: 38px;
           margin-left: 18px;
           display: inline-block;
@@ -112,13 +112,17 @@ header.page-head.index-page {
           .menu-link{
           background: none;
           color: #333333;
+            &:hover{
+              background: none;
+              color: #333333;
+            }
           }
         }
         .menu-link {
           font-family: UbuntuBold;
           text-transform: uppercase;
           font-size: 18px;
-          .link(@link-color, @link-border, #cccccc, #cccccc);
+          .link(@link-color, @link-border, @hover-color, @hover-border);
 
         }
       }
@@ -177,7 +181,7 @@ header.page-head {
           .link {
             position: relative;
             top: -3px;
-            .link(@link-color, @link-border, #cccccc, #cccccc);
+            .link(@link-color, @link-border, @hover-color, @hover-border);
           }
         }
       }
@@ -194,7 +198,7 @@ header.page-head {
         width: 210px;
         z-index: 2;
         .link {
-          .link(@link-color, @link-border, #cccccc, #cccccc);
+          .link(@link-color, @link-border, @hover-color, @hover-border);
           margin-top: 38px;
           margin-left: 18px;
           display: inline-block;
@@ -223,13 +227,17 @@ header.page-head {
           .menu-link{
             background: none;
             color: #333333;
+            &:hover{
+              background: none;
+              color: #333333;
+            }
           }
         }
         .menu-link {
           font-family: UbuntuBold;
           text-transform: uppercase;
           font-size: 18px;
-          .link(@link-color, @link-border, #cccccc, #cccccc);
+          .link(@link-color, @link-border, @hover-color, @hover-border);
         }
       }
     }
