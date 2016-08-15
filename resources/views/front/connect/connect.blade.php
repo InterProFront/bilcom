@@ -27,7 +27,7 @@
 
                             </div>
                             <div class="step-info-block">
-                                <span class="number-of-step">1</span>
+                                <span class="number-of-step">{{$i}}</span>
                                 <p class="step-title">Отправьте заявку</p>
                                 <div class="step-text">
                                     <p>Укажите желаемый тариф и отправьте заявку. Менеджер свяжется с вами в течение 10

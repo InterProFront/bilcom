@@ -37,8 +37,6 @@
                     <li class="popup-menu-item"><a href="/tarifs" class="menu-link">Тарифы</a></li>
                     <li class="popup-menu-item"><a href="/connect" class="menu-link">Как подключиться</a></li>
                     <li class="popup-menu-item"><a href="/about" class="menu-link">О Компании</a></li>
-                    <li class="popup-menu-item"><a href="" class="menu-link">Онлайн консультант</a></li>
-                    <li class="popup-menu-item"><a href="" class="menu-link">Подключить интернет</a></li>
                 </ul>
             </div>
 
