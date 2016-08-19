@@ -611,7 +611,7 @@ li.comment-item .comment p {
 }
 li.comment-item span.comment-speed {
   position: absolute;
-  background: url(../img/speed.png) no-repeat;
+  background: url(../img/speed.PNG) no-repeat;
   font-size: 46px;
   color: #ffffff;
   padding-top: 5px;
@@ -624,6 +624,8 @@ li.comment-item span.comment-speed {
 }
 li.comment-item span.comment-speed i.small {
   font-size: 14px;
+  position: relative;
+  top: -5px;
   display: block;
   font-style: normal;
 }
