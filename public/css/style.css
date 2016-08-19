@@ -60,7 +60,7 @@ body {
   text-align: center;
   max-width: 745px;
   margin: 0 auto;
-  padding-top: 58px;
+  padding-top: 60px;
   line-height: 73px;
   text-shadow: 0px 20px 25px rgba(0, 102, 0, 0.8);
 }
@@ -98,6 +98,7 @@ body {
   font-family: Ubuntu;
   position: relative;
   max-width: 160px;
+  line-height: 30px;
   top: -10px;
   left: 105px;
 }
@@ -145,12 +146,12 @@ body {
   text-align: center;
   font-size: 60px;
   font-family: UbuntuBold;
-  padding-top: 40px;
+  padding-top: 60px;
   color: #333333;
 }
 .tarifs p.sub-title-gray {
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
   font-family: Ubuntu;
   padding-top: 20px;
   color: #999999;
@@ -373,7 +374,7 @@ p.button-row button.connect:hover {
   color: #ffffff;
   font-size: 60px;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
   font-family: UbuntuBold;
 }
 .individual-tarif .wrap-1200 p.sub-title {
@@ -383,7 +384,7 @@ p.button-row button.connect:hover {
   max-width: 590px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
   line-height: 30px;
 }
 .individual-tarif .wrap-1200 .application {
@@ -462,7 +463,7 @@ p.button-row button.connect:hover {
   top: 40px;
 }
 .individual-tarif .wrap-1200 .application .row .map-button:hover {
-  color: #21cc47;
+  color: #006939 ;
   cursor: pointer;
 }
 .individual-tarif .wrap-1200 .application .row.button {
@@ -533,7 +534,7 @@ ul.icons-list li.icon.play-ic {
   padding-top: 180px;
 }
 .comments-block .title {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 20px;
   text-align: center;
   font-family: UbuntuBold;
@@ -1708,7 +1709,7 @@ header.page-head.index-page {
 header.page-head.index-page .info-row {
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 90px 40px 60px;
+  padding: 40px 90px 55px 60px;
   -ms-flex-pack: justify;
       justify-content: space-between;
   background: #ffffff;
