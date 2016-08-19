@@ -162,7 +162,11 @@ $(document).ready(function () {
         }
     ).on('click',function(){
         $('.application-block').slideToggle();
+        setTimeout(function(){
+            window.scrollTo(  0,$('.application-block').offset().top);
+        }, 500);
     });
+
     $(window).on('scroll', function () {
         setTimeout(function () {
 

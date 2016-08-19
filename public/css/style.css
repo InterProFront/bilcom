@@ -352,10 +352,11 @@ p.button-row button.connect:hover {
 }
 .dont-speed-down .speed-block h2.title {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 32px;
   font-family: UbuntuBold;
   font-weight: normal;
   padding-top: 38px;
+  padding-bottom: 20px;
 }
 .individual-tarif {
   background: #379d47;
@@ -611,7 +612,7 @@ li.comment-item .comment p {
 }
 li.comment-item span.comment-speed {
   position: absolute;
-  background: url(../img/speed.PNG) no-repeat;
+  background: url(../img/speed.gif) no-repeat;
   font-size: 46px;
   color: #ffffff;
   padding-top: 5px;
@@ -1546,7 +1547,7 @@ p.button-row button.connect:hover {
 }
 footer.footer {
   background: #333333;
-  padding: 15px 0 0px;
+  padding: 15px 30px 0px;
 }
 footer.footer .wrap-1200.foot-flex {
   display: -ms-flexbox;
@@ -1780,9 +1781,10 @@ header.page-head.index-page .info-row .connect-item {
 }
 header.page-head.index-page .info-row .connect-item .connect {
   position: absolute;
-  background: url(../img/modem-h.GIF) no-repeat 0px 0px;
+  background: url(../img/h-modem.PNG) no-repeat 0 0;
   height: 196px;
-  width: 210px;
+  left: -70px;
+  width: 320px;
   z-index: 2;
 }
 header.page-head.index-page .info-row .connect-item .connect .link {
@@ -1794,6 +1796,8 @@ header.page-head.index-page .info-row .connect-item .connect .link {
   color: #39a651;
   margin-top: 38px;
   margin-left: 18px;
+  position: relative;
+  left: 80px;
   display: inline-block;
   vertical-align: top;
   font-size: 16px;

@@ -1,10 +1,18 @@
+@media screen and (min-width: 1600px) {
+  header.page-head.index-page nav.main-menu {
+    top: 142px;
+  }
+}
 @media screen and (max-width: 1000px) {
   header.page-head.index-page {
     margin-left: 0;
     width: 100%;
   }
   header.page-head.index-page .info-row {
-    padding: 30px 20px 60px;
+    padding: 30px 20px 60px 40px;
+  }
+  header.page-head.index-page .info-row .connect-item {
+    width: 210px;
   }
   header.page-head.index-page .info-row .connect-item .connect {
     background: none;
@@ -1215,6 +1223,11 @@
   }
   .how-to-connect .free-3-days .cc-right {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .application.white-popup {
+    padding: 30px 15px;
   }
 }
 @media screen and (max-width: 410px) and (max-width: 600px) {
