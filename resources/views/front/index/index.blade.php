@@ -144,10 +144,10 @@
                 <h2 class="title">Индивидуальный тариф</h2>
                 <p class="sub-title">{{$static_main_page->individual_text_field}}</p>
                 <ul class="icons-list">
-                    <li class="icon play-ic"><img src="/img/mtab.gif" alt=""></li>
-                    <li class="icon docs-ic"><img src="/img/mdoc.gif" alt=""></li>
-                    <li class="icon media-ic"><img src="/img/mmelody.gif" alt=""></li>
-                    <li class="icon pc-ic"><img src="/img/mnote.gif" alt=""></li>
+                    <li class="icon play-ic"><img src="/img/Tab.png" alt=""></li>
+                    <li class="icon docs-ic"><img src="/img/oc.png" alt=""></li>
+                    <li class="icon media-ic"><img src="/img/Mel.png" alt=""></li>
+                    <li class="icon pc-ic"><img src="/img/Bnote.png" alt=""></li>
                 </ul>
                 <div class="application" id="application">
                     <h3 class="title">Заявка на тариф</h3>

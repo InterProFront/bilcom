@@ -147,7 +147,7 @@ $(document).ready(function () {
 
     $('.send-form').hover(
         function () {
-            $('.cable').css('width', '61px');
+            $('.cable').css('width', '55px');
         },
         function () {
             $('.cable').css('width', '2px');
@@ -184,7 +184,7 @@ $(document).ready(function () {
         $docs = $('.docs-ic');
         $play = $('.play-ic');
         var top = $('.application h3.title').offset().top;
-        if ((top - 150) <= $(this).scrollTop()) {
+        if ((top - 450) <= $(this).scrollTop()) {
             $pc.css({
                 transform: ' translateX(' + -391 + 'px) translateY(' + -153 + 'px)'
             });
@@ -195,7 +195,7 @@ $(document).ready(function () {
                 transform: ' translateX(' + -391 + 'px) translateY(' + 192 + 'px)'
             });
             $play.css({
-                transform: ' translateX(' + 420 + 'px) translateY(' + 317 + 'px)'
+                transform: ' translateX(' + 350 + 'px) translateY(' + 240 + 'px)'
             });
         } else {
             $pc.css({

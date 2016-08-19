@@ -17,15 +17,16 @@ header.page-head.index-page {
   display: flex;
   flex-direction: column;
   margin-left: 61px;
-  position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 0;
+  box-shadow: 0 -35px 55px 25px rgba(0, 86, 0, 0.25);
   background: transparent;
   .info-row {
     display: flex;
-    padding: 30px 90px 50px 60px;
+    padding: 40px 90px 40px 60px;
     justify-content: space-between;
     background: #ffffff;
-    box-shadow: 0 1px 35px 15px rgba(0, 86, 0, 0.8);
+
+    z-index: 0;
     .inf-block {
       display: flex;
       justify-content: space-between;
@@ -45,9 +46,9 @@ header.page-head.index-page {
         }
 
         font-family: @Ubuntu;
-        font-size: 20px;
-        padding-top: 10px;
-        margin-right: 25px;
+        font-size: 16px;
+        padding-top: 13px;
+        margin-right: 45px;
         color: #333333;
       }
       .consult {
@@ -62,7 +63,8 @@ header.page-head.index-page {
           }
           .link {
             position: relative;
-            top: -3px;
+            font-family: @Ubuntu;
+            top: -4px;
             .link(@link-color, @link-border, @hover-color, @hover-border);
           }
         }
@@ -76,9 +78,9 @@ header.page-head.index-page {
       left: -10px;
       .connect {
         position: absolute;
-        background: url(../img/h-modem.PNG) no-repeat 0 0;
+        background: url(../img/h-modem.PNG) no-repeat 0px 7px;
         height: 196px;
-        left: -70px;
+        left: -35px;
         width: 320px;
         z-index: 2;
         .link {
@@ -86,11 +88,12 @@ header.page-head.index-page {
           margin-top: 38px;
           margin-left: 18px;
           position: relative;
-          left: 80px;
+          left: 35px;
+          top: -1px ;
           display: inline-block;
           vertical-align: top;
           font-size: 16px;
-          font-family: @Ubuntu;
+          font-family: @UbuntuBold;
         }
       }
 
@@ -101,11 +104,22 @@ header.page-head.index-page {
   nav.main-menu {
     display: flex;
     justify-content: center;
-    position: absolute;
-    width: 1200px;
+    width: 1139px;
+    //background: url(../img/header_bot.PNG) no-repeat 0 0 ;
+    //padding-bottom: 155px;
 
-    background: url(../img/header_bot.PNG) no-repeat 0px 0px;
-    padding-bottom: 155px;
+    position: static;
+
+    box-shadow: 0 15px 35px 15px rgba(0, 86, 0, 0.25);
+    //================
+    background: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 60px;
+    //=================
+
+
+
     left: -29px;
     ul.menu {
       display: flex;
@@ -122,9 +136,9 @@ header.page-head.index-page {
           }
         }
         .menu-link {
-          font-family: UbuntuBold;
+          font-family: @UbuntuBold;
           text-transform: uppercase;
-          font-size: 18px;
+          font-size: 20px;
           .link(@link-color, @link-border, @hover-color, @hover-border);
 
         }
