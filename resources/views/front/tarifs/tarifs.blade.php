@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="free-3-days">
-                <h2 class="title">Подключение — бесплатно в течении 3 рабочих дней</h2>
+                <h2 class="title">Подключение — бесплатно в течение 3 рабочих дней</h2>
                 <div class="row-to-connector connect">
                     <button class="connect-item link" href="#connect">Оформить заявку</button>
                     <div class="cc-right">

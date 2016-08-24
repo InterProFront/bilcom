@@ -5,6 +5,7 @@
                 <a href="/">
                     <img src="/images/{{$static_all_site->logo_image->primary_link}}"
                          alt="{{$static_all_site->logo_image->alt}} ">
+                    <img src="/img/logo.png" alt="{{$static_all_site->logo_image->alt}}">
                 </a>
             </div>
             <div class="inf-block">

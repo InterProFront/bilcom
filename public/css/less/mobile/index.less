@@ -58,17 +58,19 @@
     .speed-block {
       flex-direction: column;
       align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
       h2.title {
         padding: 0;
         text-align: center;
       }
       p.sub-title {
         text-align: center;
-        padding-bottom: 80px;
+        padding-top: 20px;
+        padding-bottom: 30px;
       }
     }
   }
-
   .comments-block .title {
     padding-top: 150px;
   }
@@ -85,7 +87,17 @@
     }
   }
 }
-
+@media screen and (max-width: 1200px) and (min-width: 768px){
+  .unlimite-int {
+    .list {
+      li.plus-item {
+        &.modem{}
+        &.wifi{ .wrap{ top: 40px}}
+        &.media{ .wrap{ top: 28px}}
+      }
+    }
+  }
+}
 @media screen and (max-width: 600px) {
   .unlimite-int {
     padding-bottom: 60px;
@@ -107,7 +119,8 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 20px;
-        &.modem { .wrap {
+        &.modem {
+          .wrap {
             left: -40px;
             .absolute.item-1{
               left: 0;

@@ -9,6 +9,20 @@ function initMap() {
 
 }
 $(document).ready(function () {
+
+    $(window).on('load resize',function(){
+        if (($(window).width() <= '900') && ($(window).width() >= '720')) {
+
+            $('header .connect').appendTo($('header .inf-block'));
+
+        } else {
+
+            $('header .connect').appendTo($('header .connect-item'));
+
+        }
+    });
+
+
     $('.step-item').each(function (i) {
         if (i == 1) {
             $(this).animate({right: 0}, 3000, 'easeInOutElastic', function () {

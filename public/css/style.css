@@ -153,6 +153,7 @@ body {
   top: -110px;
   position: relative;
   max-width: 160px;
+  line-height: 30px;
   left: 225px;
 }
 .unlimite-int li.plus-item.media {
@@ -176,6 +177,7 @@ body {
   font-size: 20px;
   font-family: Ubuntu;
   top: -15px;
+  line-height: 30px;
   position: relative;
   max-width: 161px;
   left: 95px;
@@ -932,10 +934,10 @@ li.comment-item span.comment-speed i.small {
   color: #666666;
 }
 .how-to-connect .free-3-days {
-  margin: 120px 0 120px;
+  margin: 100px 0 120px;
   padding-top: 40px;
   background: url(../img/steps_free_connect.png) no-repeat center 20px;
-  padding-bottom: 60px;
+  padding-bottom: 160px;
 }
 .how-to-connect .free-3-days .title {
   margin: 0 auto;
@@ -1139,6 +1141,9 @@ li.comment-item span.comment-speed i.small {
 }
 .business-connect-item .tarif-category-block {
   padding-bottom: 90px;
+}
+.business-connect-item .tarif-category-block:last-child {
+  padding-bottom: 30px;
 }
 .business-connect-item .tarif-category-block .category-name {
   color: #333333;
@@ -1427,7 +1432,7 @@ p.button-row button.connect:hover {
   margin: 60px 0 100px;
   padding-top: 40px;
   background: url(../img/steps_free_connect.png) no-repeat center 20px;
-  padding-bottom: 60px;
+  padding-bottom: 160px;
 }
 .free-3-days .title {
   margin: 0 auto;
@@ -1778,6 +1783,9 @@ header.page-head .info-row {
       justify-content: space-between;
   background: #ffffff;
   z-index: 0;
+}
+header.page-head .info-row .logo img:last-child {
+  display: none;
 }
 header.page-head .info-row .inf-block {
   display: -ms-flexbox;

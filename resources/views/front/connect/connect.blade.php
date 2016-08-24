@@ -40,7 +40,7 @@
                     @endforeach
                 </ul>
                 <div class="free-3-days">
-                    <h2 class="title">Подключение — бесплатно в течении 3 рабочих дней</h2>
+                    <h2 class="title">Подключение — бесплатно в течениe 3 рабочих дней</h2>
                     <div class="row-to-connector">
                         <button class="connect-item">Подключить интернет</button>
                         <div class="cc-right">

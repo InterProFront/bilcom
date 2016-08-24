@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'), url('../fonts/ubuntu.woff2') format('woff2'), url('../fonts/ubuntu.woff') format('woff'), url('../fonts/ubuntu.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UbuntuBold';
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('../fonts/ubuntubold.woff2') format('woff2'), url('../fonts/ubuntubold.woff') format('woff'), url('../fonts/ubuntubold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@keyframes Arrow {
+  from {
+    background-position: 100px 0, 80px 0, 900px 0, 880px 0;
+  }
+  to {
+    background-position: 100px 110px, 80px 100px, 900px 100px, 880px 100px;
+  }
+}
 @media screen and (max-width: 1200px) {
   header.page-head.index-page,
   header.page-head {
@@ -29,7 +49,6 @@
     margin-left: 0;
     width: 100%;
     padding-left: 0;
-    padding-bottom: 30px;
   }
   header.page-head .info-row,
   header.page-head.index-page .info-row {
@@ -54,6 +73,80 @@
   header.page-head .info-row div.logo {
     width: 100%;
     text-align: center;
+  }
+  header.page-head.index-page .info-row div.logo img:last-child,
+  header.page-head .info-row div.logo img:last-child {
+    display: inline-block;
+  }
+  header.page-head.index-page .info-row div.logo img:first-child,
+  header.page-head .info-row div.logo img:first-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 720px) {
+  header.page-head.index-page .info-row,
+  header.page-head .info-row {
+    padding: 40px 20px 30px;
+  }
+  header.page-head.index-page .info-row .logo,
+  header.page-head .info-row .logo {
+    padding: 0 55px 0 10px;
+  }
+  header.page-head.index-page .info-row .inf-block,
+  header.page-head .info-row .inf-block {
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+  header.page-head.index-page .info-row .inf-block .phone,
+  header.page-head .info-row .inf-block .phone {
+    margin-right: 0;
+  }
+  header.page-head.index-page .info-row .inf-block .consult,
+  header.page-head .info-row .inf-block .consult {
+    padding-top: 29px;
+    padding: 29px 30px 0;
+  }
+  header.page-head.index-page .info-row .inf-block .consult .icon,
+  header.page-head .info-row .inf-block .consult .icon {
+    display: none;
+  }
+  header.page-head.index-page .info-row .inf-block .connect .link,
+  header.page-head .info-row .inf-block .connect .link {
+    background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    color: #39a651;
+    margin-top: 38px;
+    margin-left: 0px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    top: -13px;
+    font-family: Ubuntu;
+  }
+  header.page-head.index-page .info-row .inf-block .connect .link:hover,
+  header.page-head .info-row .inf-block .connect .link:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #006939, #006939 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    color: #006939;
+  }
+  header.page-head.index-page .info-row .inf-block .connect .link:focus,
+  header.page-head .info-row .inf-block .connect .link:focus {
+    background: linear-gradient(to left, #006939, #006939 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    color: #006939;
   }
 }
 @media screen and (max-width: 720px) {
@@ -192,7 +285,7 @@
     padding: 40px 0;
     background: #39a651;
     display: none;
-    z-index: 2;
+    z-index: 6;
   }
   header.page-head nav.main-menu .mobile-menu ul.popup-menu li.popup-menu-item {
     width: 100%;
@@ -270,6 +363,8 @@
     -ms-flex-align: center;
         -ms-grid-row-align: center;
         align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .dont-speed-down .speed-block h2.title {
     padding: 0;
@@ -277,7 +372,8 @@
   }
   .dont-speed-down .speed-block p.sub-title {
     text-align: center;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
   .comments-block .title {
     padding-top: 150px;
@@ -293,6 +389,14 @@
   }
   .tarifs .grid .col-1-2 {
     padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .unlimite-int .list li.plus-item.wifi .wrap {
+    top: 40px;
+  }
+  .unlimite-int .list li.plus-item.media .wrap {
+    top: 28px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -523,6 +627,19 @@
     background: #ffffff;
   }
 }
+@media screen and (max-width: 1000px) and (min-width: 760px) {
+  .how-to-connect .step-block .step-item,
+  .how-to-connect .step-block .step-item:nth-child(1),
+  .how-to-connect .step-block .step-item:nth-child(2),
+  .how-to-connect .step-block .step-item:nth-child(3) {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .how-to-connect .step-block .step-item:nth-child(2) .step-info-block {
+    top: 10px;
+    left: 65px;
+  }
+}
 @media screen and (max-width: 760px) {
   .how-to-connect .step-block .step-item,
   .how-to-connect .step-block .step-item:nth-child(1),
@@ -614,6 +731,7 @@
   .how-to-connect .page-title {
     font-size: 32px;
     line-height: 40px;
+    padding: 60px 20px 0;
   }
   .how-to-connect .step-block .step-item,
   .how-to-connect .step-block .step-item:nth-child(1),
@@ -694,6 +812,7 @@
     font-family: UbuntuBold;
     font-weight: normal;
     max-width: 800px;
+    padding: 0 20px;
     margin-bottom: 50px;
   }
   .tarifs-block-wrap .green-block {
@@ -905,6 +1024,9 @@
   }
   .tarifs-block-wrap .plus-block .plus-item .text-wrap p {
     text-align: left;
+  }
+  .tarifs-block-wrap .plus-block ~ .business-connect-item {
+    margin-top: 0;
   }
   .tarifs-block-wrap .business-connect-item {
     max-width: 980px;
@@ -1250,10 +1372,14 @@
         justify-content: center;
     -ms-flex-direction: column;
         flex-direction: column;
+    padding-top: 0;
   }
   footer.footer .wrap-1200.foot-flex .row-1-2:last-child .col-1-2 {
     text-align: center;
     margin-right: 0 !important;
+  }
+  footer.footer .wrap-1200.foot-flex .row-1-2:last-child .col-1-2:first-child {
+    padding-bottom: 30px;
   }
   footer.footer .wrap-1200.foot-flex .row-1-2:last-child .col-1-2.mail-icon:first-child:after {
     display: none !important;
