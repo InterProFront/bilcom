@@ -1,0 +1,203 @@
+@media screen and (max-width: 1200px){
+  header.page-head.index-page, header.page-head {
+    margin-left: 0;
+    position: relative;
+    .info-row{
+      z-index: 5;
+    }
+    nav.main-menu{
+      width: 100%;
+      position: relative;
+      top:-2px;
+      left: 0;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  header.page-head, header.page-head.index-page {
+    .info-row {
+      .connect-item {
+
+        .connect {
+          background: none;
+          width: 210px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  header.page-head, header.page-head.index-page {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 30px;
+    .info-row {
+      padding: 30px 20px 60px;
+      .connect-item {
+
+        .connect {
+          background: none;
+          width: 210px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  header.page-head.index-page,header.page-head {
+
+    .info-row {
+      flex-wrap: wrap;
+      padding-left: 60px;
+      justify-content:space-between;
+      div.logo {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  header.page-head.index-page {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
+    background: #ffffff;
+    .info-row {
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+      box-shadow: none;
+      div.logo {
+        width: auto;
+        display: inline-block;
+      }
+      .inf-block {
+        display: none;
+      }
+      .connect-item {
+        display: none;
+      }
+    }
+    nav.main-menu {
+      width: auto !important;
+      padding-top: 45px;
+      justify-content: flex-start;
+      padding-bottom: 0;
+      box-shadow: none;
+      position: static;
+      ul.menu {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: block;
+
+        .menu-button {
+          font-family: Ubuntu;
+          font-size: 24px;
+          color: #39a651;
+          display: inline-block;
+          padding: 5px 10px;
+          &.clicked {
+            color: #ffffff;
+            background: #39a651;
+          }
+        }
+        ul.popup-menu {
+          left: 0;
+          position: absolute;
+          width: 100%;
+          max-width: 100%;
+          padding: 40px 0;
+          background: #39a651;
+          display: none;
+          z-index: 10;
+          li.popup-menu-item {
+            width: 100%;
+            a.menu-link {
+              padding: 10px 0;
+              margin: 0 40px;
+              color: #ffffff;
+              display: block;
+              font-family: Ubuntu;
+              border-bottom: 1px solid #389738;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header.page-head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    padding-bottom: 0;
+    .info-row {
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+      div.logo {
+        width: auto;
+        display: inline-block;
+      }
+      .inf-block {
+        display: none;
+      }
+      .connect-item {
+        display: none;
+      }
+    }
+    nav.main-menu {
+      padding-top: 45px;
+      justify-content: flex-start;
+      padding-bottom: 0;
+      position: static;
+      width: auto !important;
+      ul.menu {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: block;
+
+        .menu-button {
+          font-family: Ubuntu;
+          font-size: 24px;
+          color: #39a651;
+          display: inline-block;
+          padding: 5px 10px;
+          &.clicked {
+            color: #ffffff;
+            background: #39a651;
+          }
+        }
+        ul.popup-menu {
+          left: 0;
+          position: absolute;
+          width: 100%;
+          max-width: 100%;
+          padding: 40px 0;
+          background: #39a651;
+          display: none;
+          z-index: 2;
+          li.popup-menu-item {
+            width: 100%;
+            a.menu-link {
+              padding: 10px 0;
+              margin: 0 40px;
+              color: #ffffff;
+              display: block;
+              font-family: Ubuntu;
+              border-bottom: 1px solid #389738;
+            }
+          }
+        }
+      }
+    }
+  }
+}
