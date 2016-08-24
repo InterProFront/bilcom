@@ -422,6 +422,7 @@ button.mfp-arrow.mfp-arrow-right:hover {
 
 #thanks p {
   text-align: center;
+  font-family: Ubuntu;
 }
 div#map_cart {
   min-width: 320px;

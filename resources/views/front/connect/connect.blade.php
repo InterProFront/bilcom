@@ -19,19 +19,21 @@
                             <div class="image-wrap">
                                 @if($i == 1)
                                     @svg('step_1')
+                                    {{--<img src="/img/1_1.png" alt="">--}}
                                 @elseif( $i == 2)
                                     @svg('step_2')
+                                    {{--<img src="/img/2_2.png" alt="">--}}
                                 @else
                                     @svg('step_3')
+                                    {{--<img src="/img/3_3.png" alt="">--}}
                                 @endif
 
                             </div>
                             <div class="step-info-block">
                                 <span class="number-of-step">{{$i}}</span>
-                                <p class="step-title">Отправьте заявку</p>
+                                <p class="step-title">{{$item->step_title_field}}</p>
                                 <div class="step-text">
-                                    <p>Укажите желаемый тариф и отправьте заявку. Менеджер свяжется с вами в течение 10
-                                        минут.</p>
+                                    {!! $item->step_text_field !!}
                                 </div>
                             </div>
                         </li>
@@ -63,7 +65,7 @@
                     <div class="row">
                         <label class="row-name">Контактное лицо</label>
                         <input type="text" data-field-type="string" data-field-name="name" class="popup-field popup_field"
-                               placeholder="Имя, должность">
+                               placeholder="Имя">
                     </div>
                     <div class="row">
                         <label class="row-name">Номер телефона</label>

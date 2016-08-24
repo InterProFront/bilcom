@@ -14,7 +14,7 @@
                 <div class="consult">
                     <label>
                         <span class="icon"></span>
-                        <a class="link consult-button">Онлайн консультант</a>
+                        <a  class="link consult-button">Онлайн консультант</a>
                     </label>
                 </div>
             </div>

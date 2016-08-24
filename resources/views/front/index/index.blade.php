@@ -2,7 +2,7 @@
 @include('front.index.header')
 @section('content')
     <?php $title = $static_main_page->page_title_field ?>
-    <section class="content">
+    <section class="content index">
         <div class="unlimite-int">
             <div class="wrap-1200">
                 @yield('header')
@@ -17,6 +17,7 @@
                                 <li class="plus-item modem">
                                     <div class="wrap">
                                         <img src="/img/modem.png" alt="">
+                                        <img src="/img/modem-1.png" alt="" class="absolute item-1">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
@@ -32,6 +33,8 @@
                                 <li class="plus-item media">
                                     <div class="wrap">
                                         <img src="/img/media.png" alt="">
+                                        <img src="/img/media-3.png" alt="" class="absolute item-1">
+                                        <img src="/img/media-4.png" alt="" class="absolute item-2">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
@@ -160,7 +163,7 @@
                     <div class="row">
                         <label class="row-name">Контактное лицо</label>
                         <input type="text" data-field-type="string" data-field-name="name" class="popup-field popup_field"
-                               placeholder="Имя, должность">
+                               placeholder="Имя">
                     </div>
                     <div class="row">
                         <label class="row-name">Номер телефона</label>

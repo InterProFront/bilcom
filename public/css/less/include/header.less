@@ -13,13 +13,24 @@ and (min-resolution: .001dpcm) {
   }
 }
 
-header.page-head.index-page {
+header.page-head{
+  &.index-page {
+    box-shadow: 0 -35px 55px 25px rgba(0, 86, 0, 0.25);
+    margin-left: 61px;
+    padding-left: 0;
+    background: transparent;
+    nav.main-menu{
+      box-shadow: 0 15px 35px 15px rgba(0, 86, 0, 0.25);
+    }
+  }
   display: flex;
+  position: relative;
+  z-index: 100;
   flex-direction: column;
-  margin-left: 61px;
+  margin-left: 0;
+  padding-left: 61px;
   padding-bottom: 0;
-  box-shadow: 0 -35px 55px 25px rgba(0, 86, 0, 0.25);
-  background: transparent;
+  background: #FFFFFF;
   .info-row {
     display: flex;
     padding: 40px 90px 55px 60px;
@@ -110,7 +121,7 @@ header.page-head.index-page {
 
     position: static;
 
-    box-shadow: 0 15px 35px 15px rgba(0, 86, 0, 0.25);
+
     //================
     background: #ffffff;
     border-bottom-left-radius: 10px;
@@ -132,6 +143,7 @@ header.page-head.index-page {
             &:hover{
               background: none;
               color: #333333;
+              cursor: default;
             }
           }
         }
@@ -141,120 +153,6 @@ header.page-head.index-page {
           font-size: 20px;
           .link(@link-color, @link-border, @hover-color, @hover-border);
 
-        }
-      }
-    }
-  }
-  .mobile-menu {
-    display: none;
-  }
-
-}
-
-header.page-head {
-  display: flex;
-  flex-direction: column;
-  margin-left: 61px;
-  position: relative;
-  padding-bottom: 125px;
-  background: url(../img/header_bot_st.PNG) no-repeat 0px 0px;
-  .info-row {
-    display: flex;
-    padding: 30px 90px 50px 60px;
-    justify-content: space-between;
-    .inf-block {
-      display: flex;
-      justify-content: space-between;
-      .phone {
-        position: relative;
-        p {
-          &:before {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            width: 20px;
-            left: -24px;
-            top:5px;
-            height: 20px;
-            background: url(../img/head-phone.png) no-repeat;
-          }
-        }
-        font-family: @Ubuntu;
-        font-size: 20px;
-        padding-top: 10px;
-        margin-right: 25px;
-        color: #333333;
-      }
-      .consult {
-        label {
-          .icon {
-            display: inline-block;
-            width: 50px;
-            height: 44px;
-            background: url(../img/cons-icon.png);
-            position: relative;
-            top: 10px;
-          }
-          .link {
-            position: relative;
-            top: -3px;
-            .link(@link-color, @link-border, @hover-color, @hover-border);
-          }
-        }
-      }
-    }
-    .connect-item {
-      display: inline-block;
-      width: 210px;
-      position: relative;
-      top: -12px;
-      left: -26px;
-      .connect {
-        position: absolute;
-        height: 196px;
-        width: 210px;
-        z-index: 2;
-        .link {
-          .link(@link-color, @link-border, @hover-color, @hover-border);
-          margin-top: 38px;
-          margin-left: 18px;
-          display: inline-block;
-          vertical-align: top;
-          font-size: 16px;
-          font-family: @Ubuntu;
-        }
-      }
-
-    }
-
-  }
-
-  nav.main-menu {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 1200px;
-    padding-bottom: 155px;
-    left: -29px;
-    ul.menu {
-      display: flex;
-      li.menu-item {
-        padding: 0 25px;
-        &.active{
-          .menu-link{
-            background: none;
-            color: #333333;
-            &:hover{
-              background: none;
-              color: #333333;
-            }
-          }
-        }
-        .menu-link {
-          font-family: UbuntuBold;
-          text-transform: uppercase;
-          font-size: 18px;
-          .link(@link-color, @link-border, @hover-color, @hover-border);
         }
       }
     }

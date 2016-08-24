@@ -26,14 +26,34 @@
 }
 body {
   overflow-x: hidden;
+  background: #379d47;
 }
 .wrapper {
   width: 100%;
   margin: 0 auto;
 }
+.index .wrap-1200 {
+  background: none;
+  box-shadow: none !important;
+}
 .wrap-1200 {
   max-width: 1200px;
   margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 -35px 55px 25px rgba(0, 86, 0, 0.25);
+}
+.wrap-1200:last-child {
+  box-shadow: 0 -35px 55px 25px rgba(0, 86, 0, 0.25);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.wrap-1200:nth-child(2) {
+  box-shadow: 0 -35px 55px 25px rgba(0, 86, 0, 0.25);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer .wrap-1200 {
+  box-shadow: none !important;
 }
 .emitter {
   position: relative;
@@ -79,6 +99,7 @@ body {
 .unlimite-int li.plus-item {
   display: inline-block;
   position: relative;
+  opacity: 0;
   transition: all 1s;
 }
 .unlimite-int li.plus-item .wrap {
@@ -91,6 +112,14 @@ body {
 .unlimite-int li.plus-item.modem {
   top: -165px;
   left: 134px;
+}
+.unlimite-int li.plus-item.modem .absolute {
+  position: absolute;
+  transition: all 0.5s;
+}
+.unlimite-int li.plus-item.modem .absolute.item-1 {
+  top: 0;
+  transform: scale(0);
 }
 .unlimite-int li.plus-item.modem p.plus-text {
   color: #ffffff;
@@ -130,6 +159,18 @@ body {
   top: -220px;
   left: 366px;
 }
+.unlimite-int li.plus-item.media .absolute {
+  position: absolute;
+  transition: all 0.5s;
+}
+.unlimite-int li.plus-item.media .absolute.item-1 {
+  top: -10px;
+  transform: scale(0);
+}
+.unlimite-int li.plus-item.media .absolute.item-2 {
+  top: -20px;
+  transform: scale(0);
+}
 .unlimite-int li.plus-item.media p.plus-text {
   color: #ffffff;
   font-size: 20px;
@@ -141,6 +182,7 @@ body {
 }
 .tarifs {
   padding-bottom: 80px;
+  background: #ffffff;
 }
 .tarifs h2.title-gray {
   text-align: center;
@@ -360,9 +402,9 @@ p.button-row button.connect:hover {
   padding-bottom: 20px;
 }
 .individual-tarif {
+  position: relative;
   background: #379d47;
   max-height: 883px;
-  position: relative;
 }
 .individual-tarif .wrap-1200 {
   background: url(../img/wifi-ind.png) no-repeat center 230px;
@@ -610,6 +652,9 @@ li.comment-item .comment p {
   line-height: 24px;
   padding-bottom: 20px;
 }
+li.comment-item .comment p:last-child {
+  padding-bottom: 0;
+}
 li.comment-item span.comment-speed {
   position: absolute;
   background: url(../img/speed.PNG) no-repeat;
@@ -764,6 +809,8 @@ li.comment-item span.comment-speed i.small {
   text-align: center;
   color: #333333;
   font-size: 60px;
+  margin-top: 0;
+  padding-top: 60px;
   font-family: UbuntuBold;
   font-weight: normal;
   padding-bottom: 0;
@@ -813,6 +860,7 @@ li.comment-item span.comment-speed i.small {
   padding-bottom: 20px;
   padding-left: 20px;
 }
+.how-to-connect .step-block .step-item:nth-child(2) .image-wrap img,
 .how-to-connect .step-block .step-item:nth-child(2) .image-wrap svg {
   position: relative;
 }
@@ -831,6 +879,7 @@ li.comment-item span.comment-speed i.small {
   padding-bottom: 20px;
   padding-left: 20px;
 }
+.how-to-connect .step-block .step-item:nth-child(3) .image-wrap img,
 .how-to-connect .step-block .step-item:nth-child(3) .image-wrap svg {
   position: relative;
   left: -50px;
@@ -1031,7 +1080,8 @@ li.comment-item span.comment-speed i.small {
 .tarifs-block-wrap h1.title {
   color: #333333;
   text-align: center;
-  margin: 35px auto 0;
+  margin: 0 auto 0;
+  padding-top: 35px;
   font-size: 60px;
   line-height: 72px;
   font-family: UbuntuBold;
@@ -1441,8 +1491,11 @@ p.button-row button.connect:hover {
 .about-company {
   margin: 0 auto;
   max-width: 1000px;
+  margin-bottom: 100px;
 }
 .about-company .title {
+  margin-top: 0;
+  padding-top: 60px;
   font-size: 60px;
   font-family: UbuntuBold;
   font-weight: normal;
@@ -1696,17 +1749,28 @@ footer.footer .wrap-1200.foot-flex .row-1-2:first-child .col-1-3:last-child p.ro
     top: 144px;
   }
 }
-header.page-head.index-page {
+header.page-head {
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  z-index: 100;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-left: 61px;
+  margin-left: 0;
+  padding-left: 61px;
   padding-bottom: 0;
+  background: #FFFFFF;
+}
+header.page-head.index-page {
   box-shadow: 0 -35px 55px 25px rgba(0, 86, 0, 0.25);
+  margin-left: 61px;
+  padding-left: 0;
   background: transparent;
 }
-header.page-head.index-page .info-row {
+header.page-head.index-page nav.main-menu {
+  box-shadow: 0 15px 35px 15px rgba(0, 86, 0, 0.25);
+}
+header.page-head .info-row {
   display: -ms-flexbox;
   display: flex;
   padding: 40px 90px 55px 60px;
@@ -1714,192 +1778,6 @@ header.page-head.index-page .info-row {
       justify-content: space-between;
   background: #ffffff;
   z-index: 0;
-}
-header.page-head.index-page .info-row .inf-block {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-header.page-head.index-page .info-row .inf-block .phone {
-  position: relative;
-  font-family: Ubuntu;
-  font-size: 16px;
-  padding-top: 13px;
-  margin-right: 45px;
-  color: #333333;
-}
-header.page-head.index-page .info-row .inf-block .phone p:before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 20px;
-  left: -24px;
-  top: 5px;
-  height: 20px;
-  background: url(../img/head-phone.png) no-repeat;
-}
-header.page-head.index-page .info-row .inf-block .consult label .icon {
-  display: inline-block;
-  width: 50px;
-  height: 44px;
-  background: url(../img/cons-icon.png);
-  position: relative;
-  top: 10px;
-}
-header.page-head.index-page .info-row .inf-block .consult label .link {
-  position: relative;
-  font-family: Ubuntu;
-  top: -4px;
-  background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #39a651;
-}
-header.page-head.index-page .info-row .inf-block .consult label .link:hover {
-  cursor: pointer;
-  background: linear-gradient(to left, #006939, #006939 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #006939;
-}
-header.page-head.index-page .info-row .inf-block .consult label .link:focus {
-  background: linear-gradient(to left, #006939, #006939 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #006939;
-}
-header.page-head.index-page .info-row .connect-item {
-  display: inline-block;
-  width: 210px;
-  position: relative;
-  top: -12px;
-  left: -10px;
-}
-header.page-head.index-page .info-row .connect-item .connect {
-  position: absolute;
-  background: url(../img/h-modem.PNG) no-repeat 0px 7px;
-  height: 196px;
-  left: -35px;
-  width: 320px;
-  z-index: 2;
-}
-header.page-head.index-page .info-row .connect-item .connect .link {
-  background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #39a651;
-  margin-top: 38px;
-  margin-left: 18px;
-  position: relative;
-  left: 35px;
-  top: -1px;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
-  font-family: UbuntuBold;
-}
-header.page-head.index-page .info-row .connect-item .connect .link:hover {
-  cursor: pointer;
-  background: linear-gradient(to left, #006939, #006939 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #006939;
-}
-header.page-head.index-page .info-row .connect-item .connect .link:focus {
-  background: linear-gradient(to left, #006939, #006939 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #006939;
-}
-header.page-head.index-page nav.main-menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 1139px;
-  position: static;
-  box-shadow: 0 15px 35px 15px rgba(0, 86, 0, 0.25);
-  background: #ffffff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding-bottom: 60px;
-  left: -29px;
-}
-header.page-head.index-page nav.main-menu ul.menu {
-  display: -ms-flexbox;
-  display: flex;
-}
-header.page-head.index-page nav.main-menu ul.menu li.menu-item {
-  padding: 0 25px;
-}
-header.page-head.index-page nav.main-menu ul.menu li.menu-item.active .menu-link {
-  background: none;
-  color: #333333;
-}
-header.page-head.index-page nav.main-menu ul.menu li.menu-item.active .menu-link:hover {
-  background: none;
-  color: #333333;
-}
-header.page-head.index-page nav.main-menu ul.menu li.menu-item .menu-link {
-  font-family: UbuntuBold;
-  text-transform: uppercase;
-  font-size: 20px;
-  background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #39a651;
-}
-header.page-head.index-page nav.main-menu ul.menu li.menu-item .menu-link:hover {
-  cursor: pointer;
-  background: linear-gradient(to left, #006939, #006939 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #006939;
-}
-header.page-head.index-page nav.main-menu ul.menu li.menu-item .menu-link:focus {
-  background: linear-gradient(to left, #006939, #006939 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
-  background-position: 0 100%;
-  background-size: 10px 1px;
-  background-repeat: repeat-x;
-  color: #006939;
-}
-header.page-head.index-page .mobile-menu {
-  display: none;
-}
-header.page-head {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin-left: 61px;
-  position: relative;
-  padding-bottom: 125px;
-  background: url(../img/header_bot_st.PNG) no-repeat 0px 0px;
-}
-header.page-head .info-row {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px 90px 50px 60px;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
 }
 header.page-head .info-row .inf-block {
   display: -ms-flexbox;
@@ -1910,9 +1788,9 @@ header.page-head .info-row .inf-block {
 header.page-head .info-row .inf-block .phone {
   position: relative;
   font-family: Ubuntu;
-  font-size: 20px;
-  padding-top: 10px;
-  margin-right: 25px;
+  font-size: 16px;
+  padding-top: 13px;
+  margin-right: 45px;
   color: #333333;
 }
 header.page-head .info-row .inf-block .phone p:before {
@@ -1935,7 +1813,8 @@ header.page-head .info-row .inf-block .consult label .icon {
 }
 header.page-head .info-row .inf-block .consult label .link {
   position: relative;
-  top: -3px;
+  font-family: Ubuntu;
+  top: -4px;
   background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
   background-position: 0 100%;
@@ -1965,12 +1844,14 @@ header.page-head .info-row .connect-item {
   width: 210px;
   position: relative;
   top: -12px;
-  left: -26px;
+  left: -10px;
 }
 header.page-head .info-row .connect-item .connect {
   position: absolute;
+  background: url(../img/h-modem.PNG) no-repeat 0px 7px;
   height: 196px;
-  width: 210px;
+  left: -35px;
+  width: 320px;
   z-index: 2;
 }
 header.page-head .info-row .connect-item .connect .link {
@@ -1982,10 +1863,13 @@ header.page-head .info-row .connect-item .connect .link {
   color: #39a651;
   margin-top: 38px;
   margin-left: 18px;
+  position: relative;
+  left: 35px;
+  top: -1px;
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
-  font-family: Ubuntu;
+  font-family: UbuntuBold;
 }
 header.page-head .info-row .connect-item .connect .link:hover {
   cursor: pointer;
@@ -2009,9 +1893,12 @@ header.page-head nav.main-menu {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  position: absolute;
-  width: 1200px;
-  padding-bottom: 155px;
+  width: 1139px;
+  position: static;
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 60px;
   left: -29px;
 }
 header.page-head nav.main-menu ul.menu {
@@ -2028,11 +1915,12 @@ header.page-head nav.main-menu ul.menu li.menu-item.active .menu-link {
 header.page-head nav.main-menu ul.menu li.menu-item.active .menu-link:hover {
   background: none;
   color: #333333;
+  cursor: default;
 }
 header.page-head nav.main-menu ul.menu li.menu-item .menu-link {
   font-family: UbuntuBold;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
   background: linear-gradient(to left, #c3e4ca, #c3e4ca 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
   background-position: 0 100%;

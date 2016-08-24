@@ -10,7 +10,7 @@
             <div class="row">
                 <label class="row-name">Контактное лицо</label>
                 <input type="text" data-field-type="string" data-field-name="name" class="popup-field popup_field"
-                       placeholder="Имя, должность">
+                       placeholder="Имя">
             </div>
             <div class="row">
                 <label class="row-name">Номер телефона</label>

@@ -1,37 +1,65 @@
 var map;
 var geocoder;
 function initMap() {
-    map = new google.maps.Map( document.getElementById('map_cart'), {
+    map = new google.maps.Map(document.getElementById('map_cart'), {
         center: {lat: 43.257487, lng: 76.9392692},
         zoom: 14
     });
     geocoder = new google.maps.Geocoder();
 
 }
-$(document).on('scroll',function(){
-    $('.step-item').each(function(i){
-        if($(document).scrollTop() >= $('.how-to-connect .page-title').offset().top - 200){
-            if(i == 1){
-                $(this).animate({right: 0},3000,'easeInOutElastic',function(){});
-            }else{
-                $(this).animate({left: 0},3000,'easeInOutElastic',function(){});
-            }
-
+$(document).ready(function () {
+    $('.step-item').each(function (i) {
+        if (i == 1) {
+            $(this).animate({right: 0}, 3000, 'easeInOutElastic', function () {
+            });
+        } else {
+            $(this).animate({left: 0}, 3000, 'easeInOutElastic', function () {
+            });
         }
     });
-});
-$(document).ready(function () {
+   $(this).find('.plus-item').each( function(k, v) {
+       var el = this;
+       setTimeout(function () {
+           $(el).css('opacity','1');
+           if( $(el).hasClass('modem')){
+               $(el).find('.absolute').each( function(k, v) {
+                   var el = this;
+                   setTimeout(function () {
+                       $(el).css({opacity: 1, transform: "scale(1)"})
+                   }, k*400);
+               });
+           }
+           if( $(el).hasClass('wifi')){
+               $(el).find('.wifi').each( function(k, v) {
+                   var el = this;
+                   setTimeout(function () {
+                       $(el).css('opacity','1')
+                   }, k*200);
+               });
+           }
+           if( $(el).hasClass('media')){
+               $(el).find('.absolute').each( function(k, v) {
+                   var el = this;
+                   setTimeout(function () {
+                       $(el).css({opacity: 1, transform: "scale(1)"})
+                   }, k*150);
+               });
+           }
+       }, k*300);
+   });
+
     $('.map-button').magnificPopup({
         type: 'inline',
         midClick: true,
         callbacks: {
 
-            open: function(){
+            open: function () {
                 google.maps.event.trigger(map, 'resize');
-                map.addListener('click',function(event){
-                    geocoder.geocode({'latLng': event.latLng},function(result,status){
+                map.addListener('click', function (event) {
+                    geocoder.geocode({'latLng': event.latLng}, function (result, status) {
                         //alert(result[0].formatted_address)
-                        $('.popup_field[data-field-name="address"]').val(result[0].formatted_address).attr('title',result[0].formatted_address);
+                        $('.popup_field[data-field-name="address"]').val(result[0].formatted_address).attr('title', result[0].formatted_address);
                         $.magnificPopup.close();
                     });
                 });
@@ -40,39 +68,33 @@ $(document).ready(function () {
         }
     });
 
-    $('.consult-button').on('click', function(e) {
+    $('.consult-button').on('click', function (e) {
         // Открываем чат и фокусируем поле ввода
         e.preventDefault();
-        Chatra('show',true);
-        Chatra('openChat',true);
+        Chatra('show', true);
+        Chatra('openChat', true);
     });
     //элемент не на экране
-
-
-
-
 
 
     $('.connect .link').magnificPopup({
         type: 'inline',
         midClick: true,
-        callbacks: {
-
-        }
+        callbacks: {}
     });
     $('button.connect').magnificPopup({
         type: 'inline',
         midClick: true,
         callbacks: {
-            close: function(){
+            close: function () {
             }
         }
-    }).on('click',function(){
-        $('#connect_tarif .popup_field[data-field-name="speed"]').val( $(this).data('mb') );
+    }).on('click', function () {
+        $('#connect_tarif .popup_field[data-field-name="speed"]').val($(this).data('mb'));
     });
 
-    $('.main-menu .menu-item a').each(function(){
-        if($(this).attr('href') == window.location.pathname ){
+    $('.main-menu .menu-item a').each(function () {
+        if ($(this).attr('href') == window.location.pathname) {
             $(this).parent().addClass('active');
         }
     });
@@ -160,25 +182,14 @@ $(document).ready(function () {
         function () {
             $('.cable-right').css('width', '5px');
         }
-    ).on('click',function(){
+    ).on('click', function () {
         $('.application-block').slideToggle();
-        setTimeout(function(){
-            window.scrollTo(  0,$('.application-block').offset().top);
+        setTimeout(function () {
+            window.scrollTo(0, $('.application-block').offset().top);
         }, 500);
     });
 
     $(window).on('scroll', function () {
-        setTimeout(function () {
-
-
-            $('.wifi').each(function (i) {
-                var $this = $(this);
-                timeout = i * 200;
-                setTimeout(function () {
-                    $this.css('opacity', '1');
-                }, timeout);
-            });
-        }, 1000);
         $pc = $('.pc-ic');
         $media = $('.media-ic');
         $docs = $('.docs-ic');
@@ -189,7 +200,7 @@ $(document).ready(function () {
                 transform: ' translateX(' + -391 + 'px) translateY(' + -153 + 'px)'
             });
             $media.css({
-                transform: ' translateX(' + 355 + 'px) translateY(' + -37 + 'px)'
+                transform: ' translateX(' + 490 + 'px) translateY(' + -37 + 'px)'
             });
             $docs.css({
                 transform: ' translateX(' + -391 + 'px) translateY(' + 192 + 'px)'
