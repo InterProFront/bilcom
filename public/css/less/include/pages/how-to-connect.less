@@ -21,11 +21,17 @@
     padding-top: 50px;
     max-width: 940px;
     margin: 0 auto;
-    .step-item{
+    .step-item {
       position: relative;
-      &:nth-child(1){left: -1500px;}
-      &:nth-child(2){right: -1500px;}
-      &:nth-child(3){left: -1500px;}
+      &:nth-child(1) {
+        left: -1500px;
+      }
+      &:nth-child(2) {
+        right: -1500px;
+      }
+      &:nth-child(3) {
+        left: -1500px;
+      }
       display: flex;
       justify-content: flex-start;
       flex-direction: row;
@@ -56,7 +62,7 @@
       &:nth-child(3) {
         .image-wrap {
           position: relative;
-          img,svg {
+          img, svg {
             position: relative;
             left: -50px;
             top: 5px;
@@ -115,7 +121,7 @@
     }
   }
   .free-3-days {
-    margin: 100px 0 120px;
+    margin: 120px 0 100px;
     padding-top: 40px;
     background: url(../img/steps_free_connect.png) no-repeat center 20px;
     padding-bottom: 160px;
@@ -137,12 +143,12 @@
       margin: 0 auto;
       .connect-item {
         color: #ffffff;
-        font-family: @Ubuntu;
-        padding: 15px 25px;
+        font-family: Ubuntu;
+        padding: 12px 45px;
         font-size: 20px;
         border-radius: 30px;
         border: none;
-        background: @dark-green;
+        background: #379d47;
         margin-top: 12px;
         position: relative;
         z-index: 5;
@@ -150,7 +156,7 @@
           cursor: pointer;
           background: #109d2c;
         }
-        &:focus{
+        &:focus {
           outline: none;
         }
       }
@@ -185,78 +191,82 @@
 
 .application-block {
   background: @dark-green;
-  padding-top:10px;
+  padding-top: 10px;
   display: none;
   padding-bottom: 40px;
-  .application {
-    max-width: 460px;
-    margin: 55px auto 0;
-    padding: 30px 70px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: 0 15px  35px 0 rgba(0, 86, 0, 0.8);
-    z-index: 5;
-    background: url(../img/ind-back.PNG) no-repeat 30px 0px, #ffffff;
-    h3.title {
-      font-family: @UbuntuBold;
-      font-size: 36px;
-      padding-top: 10px;
-      color: #333333;
-      padding-bottom: 40px;
-    }
-    .row {
-      padding-bottom: 30px;
+  .wrap-1200 {
+    background: @dark-green;
+    box-shadow: none;
+    .application {
+      max-width: 460px;
+      margin: 55px auto 0;
+      padding: 30px 70px;
+      box-sizing: border-box;
+      border-radius: 20px;
       position: relative;
-      .row-name {
-        display: block;
-        font-family: @Ubuntu;
+      box-shadow: 0 15px 35px 0 rgba(0, 86, 0, 0.8);
+      z-index: 5;
+      background: url(../img/ind-back.PNG) no-repeat 30px 0px, #ffffff;
+      h3.title {
+        font-family: @UbuntuBold;
+        font-size: 36px;
+        padding-top: 10px;
         color: #333333;
-        font-size: 20px;
-        padding-bottom: 5px;
+        padding-bottom: 40px;
       }
-      .popup-field {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #cccccc;
-        font-size: 20px;
-        font-weight: normal;
-        font-family: @Ubuntu;
-        &[data-field-name="address"] {
-          padding-right: 71px;
-        }
-        &:focus, &:hover {
-          outline: none;
-          border: 1px solid @dark-green;
-        }
-      }
-      .map-button {
-        position: absolute;
-        right: 10px;
-        text-align: right;
-        font-size: 12px;
-        text-decoration: underline;
-        color: @link-color;
-        top: 40px;
-      }
-      &.button {
-        text-align: right;
-        .send-form {
-          color: #ffffff;
+      .row {
+        padding-bottom: 30px;
+        position: relative;
+        .row-name {
+          display: block;
           font-family: @Ubuntu;
-          padding: 15px 25px;
+          color: #333333;
           font-size: 20px;
-          border-radius: 30px;
-          border: none;
-          background: @dark-green;
-          margin-top: 8px;
-          position: relative;
-          z-index: 5;
-          &:hover {
-            cursor: pointer;
-            background: #109d2c;
+          padding-bottom: 5px;
+        }
+        .popup-field {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #cccccc;
+          font-size: 20px;
+          font-weight: normal;
+          font-family: @Ubuntu;
+          &[data-field-name="address"] {
+            padding-right: 71px;
+          }
+          &:focus, &:hover {
+            outline: none;
+            border: 1px solid @dark-green;
+          }
+        }
+        .map-button {
+          position: absolute;
+          right: 10px;
+          text-align: right;
+          font-size: 12px;
+          text-decoration: underline;
+          color: @link-color;
+          top: 40px;
+        }
+        &.button {
+          text-align: right;
+          .send-form {
+            color: #ffffff;
+            font-family: @Ubuntu;
+            padding: 15px 25px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: none;
+            background: @dark-green;
+            margin-top: 8px;
+            position: relative;
+            z-index: 5;
+            &:hover {
+              cursor: pointer;
+              background: #109d2c;
+            }
           }
         }
       }

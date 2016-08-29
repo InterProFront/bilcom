@@ -574,7 +574,7 @@ ul.icons-list li.icon.play-ic {
 }
 .comments-block {
   background: #379d47;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   padding-top: 180px;
 }
 .comments-block .title {
@@ -934,7 +934,7 @@ li.comment-item span.comment-speed i.small {
   color: #666666;
 }
 .how-to-connect .free-3-days {
-  margin: 100px 0 120px;
+  margin: 120px 0 100px;
   padding-top: 40px;
   background: url(../img/steps_free_connect.png) no-repeat center 20px;
   padding-bottom: 160px;
@@ -958,7 +958,7 @@ li.comment-item span.comment-speed i.small {
 .how-to-connect .free-3-days .row-to-connector .connect-item {
   color: #ffffff;
   font-family: Ubuntu;
-  padding: 15px 25px;
+  padding: 12px 45px;
   font-size: 20px;
   border-radius: 30px;
   border: none;
@@ -1004,7 +1004,11 @@ li.comment-item span.comment-speed i.small {
   display: none;
   padding-bottom: 40px;
 }
-.application-block .application {
+.application-block .wrap-1200 {
+  background: #379d47;
+  box-shadow: none;
+}
+.application-block .wrap-1200 .application {
   max-width: 460px;
   margin: 55px auto 0;
   padding: 30px 70px;
@@ -1015,25 +1019,25 @@ li.comment-item span.comment-speed i.small {
   z-index: 5;
   background: url(../img/ind-back.PNG) no-repeat 30px 0px, #ffffff;
 }
-.application-block .application h3.title {
+.application-block .wrap-1200 .application h3.title {
   font-family: UbuntuBold;
   font-size: 36px;
   padding-top: 10px;
   color: #333333;
   padding-bottom: 40px;
 }
-.application-block .application .row {
+.application-block .wrap-1200 .application .row {
   padding-bottom: 30px;
   position: relative;
 }
-.application-block .application .row .row-name {
+.application-block .wrap-1200 .application .row .row-name {
   display: block;
   font-family: Ubuntu;
   color: #333333;
   font-size: 20px;
   padding-bottom: 5px;
 }
-.application-block .application .row .popup-field {
+.application-block .wrap-1200 .application .row .popup-field {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -1043,15 +1047,15 @@ li.comment-item span.comment-speed i.small {
   font-weight: normal;
   font-family: Ubuntu;
 }
-.application-block .application .row .popup-field[data-field-name="address"] {
+.application-block .wrap-1200 .application .row .popup-field[data-field-name="address"] {
   padding-right: 71px;
 }
-.application-block .application .row .popup-field:focus,
-.application-block .application .row .popup-field:hover {
+.application-block .wrap-1200 .application .row .popup-field:focus,
+.application-block .wrap-1200 .application .row .popup-field:hover {
   outline: none;
   border: 1px solid #379d47;
 }
-.application-block .application .row .map-button {
+.application-block .wrap-1200 .application .row .map-button {
   position: absolute;
   right: 10px;
   text-align: right;
@@ -1060,10 +1064,10 @@ li.comment-item span.comment-speed i.small {
   color: #39a651;
   top: 40px;
 }
-.application-block .application .row.button {
+.application-block .wrap-1200 .application .row.button {
   text-align: right;
 }
-.application-block .application .row.button .send-form {
+.application-block .wrap-1200 .application .row.button .send-form {
   color: #ffffff;
   font-family: Ubuntu;
   padding: 15px 25px;
@@ -1075,7 +1079,7 @@ li.comment-item span.comment-speed i.small {
   position: relative;
   z-index: 5;
 }
-.application-block .application .row.button .send-form:hover {
+.application-block .wrap-1200 .application .row.button .send-form:hover {
   cursor: pointer;
   background: #109d2c;
 }

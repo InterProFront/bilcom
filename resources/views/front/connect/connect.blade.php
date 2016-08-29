@@ -42,7 +42,7 @@
                 <div class="free-3-days">
                     <h2 class="title">Подключение — бесплатно в течениe 3 рабочих дней</h2>
                     <div class="row-to-connector">
-                        <button class="connect-item">Подключить интернет</button>
+                        <button class="connect-item">Оформить заявку</button>
                         <div class="cc-right">
                             <div class="connector-right"></div>
                             <div class="cable-right"></div>
@@ -78,10 +78,7 @@
                                placeholder="до 100 Мб/сек">
                     </div>
                     <div class="row button">
-                        <div class="cc">
-                            <div class="cable"></div>
-                            <div class="connector"></div>
-                        </div>
+
                         <button class="send-form send-ask"  data-type-name="application" data-popup-id="application">Отправить</button>
                     </div>
                 </div>
