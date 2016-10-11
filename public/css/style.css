@@ -86,7 +86,7 @@ body {
 .unlimite-int p.sub-title {
   color: #ffffff;
   padding-top: 2px;
-  font-family: Ubuntu;
+  font-family: UbuntuBold;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -142,6 +142,7 @@ body {
   transition: opacity 1s linear;
   font-family: UbuntuBold;
   color: #ffffff;
+  font-size: 18px;
   max-width: 200px;
   text-align: center;
   line-height: 1.5em;
@@ -204,28 +205,28 @@ body {
   position: relative;
 }
 .tarifs .grid .block-2 .hover-block.t1 {
-  background: url(../img/t1-s.png) no-repeat center calc(128%), #f2f2f2;
+  background: url(../img/t1-s.png) no-repeat center calc(100% + 27px), #f2f2f2;
 }
 .tarifs .grid .block-2 .hover-block.t1:hover {
-  background: url(../img/t1-s-h.png) no-repeat center calc(128%), #00933d;
+  background: url(../img/t1-s-h.png) no-repeat center calc(100% + 27px), #00933d;
 }
 .tarifs .grid .block-2 .hover-block.t2 {
-  background: url(../img/t2-s.png) no-repeat center calc(128%), #f2f2f2;
+  background: url(../img/t2-s.png) no-repeat center calc(100% + 27px), #f2f2f2;
 }
 .tarifs .grid .block-2 .hover-block.t2:hover {
-  background: url(../img/t2-s-h.png) no-repeat center calc(128%), #00933d;
+  background: url(../img/t2-s-h.png) no-repeat center calc(100% + 27px), #00933d;
 }
 .tarifs .grid .block-2 .hover-block.t3 {
-  background: url(../img/t3-s.png) no-repeat center calc(128%), #f2f2f2;
+  background: url(../img/t3-s.png) no-repeat center calc(100% + 27px), #f2f2f2;
 }
 .tarifs .grid .block-2 .hover-block.t3:hover {
-  background: url(../img/t3-s-h.png) no-repeat center calc(128%), #00933d;
+  background: url(../img/t3-s-h.png) no-repeat center calc(100% + 27px), #00933d;
 }
 .tarifs .grid .block-2 .hover-block.t4 {
-  background: url(../img/t4-s.png) no-repeat center calc(128%), #f2f2f2;
+  background: url(../img/t4-s.png) no-repeat center calc(100% + 27px), #f2f2f2;
 }
 .tarifs .grid .block-2 .hover-block.t4:hover {
-  background: url(../img/t4-s-h.png) no-repeat center calc(128%), #00933d;
+  background: url(../img/t4-s-h.png) no-repeat center calc(100% + 27px), #00933d;
 }
 .tarifs .grid .block-2 .hover-block:hover {
   cursor: pointer;
