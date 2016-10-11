@@ -19,22 +19,24 @@
         flex-wrap: wrap;
         align-items: center;
         padding-bottom: 40px;
-        &.wifi {
-          position: relative;
-          top: 0;
-          left: 0;
-        }
+
         p.plus-text {
-          padding-left: 70px;
+          padding-left: 0;
           position: static !important;
+          .wrap{
+            text-align: center;
+            img{
+
+            }
+          }
         }
 
       }
     }
   }
 
-  .grid-comment {
-    flex-direction: column;
+  .comments-block .grid-comment {
+    justify-content: space-around;
     align-items: center;
     .comment-item {
       left: 0 !important;
@@ -95,6 +97,29 @@
         &.wifi{ .wrap{ top: 40px}}
         &.media{ .wrap{ top: 28px}}
       }
+    }
+  }
+  .comments-block .grid-comment {
+    flex-direction: column;
+    align-items: center;
+    .comment-item {
+      left: 0 !important;
+    }
+    .terabite {
+      left: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comments-block .grid-comment {
+    flex-direction: column;
+    align-items: center;
+    .comment-item {
+      left: 0 !important;
+    }
+    .terabite {
+      left: 0 !important;
     }
   }
 }
@@ -226,9 +251,9 @@
 
               span.text {
                 font-size: 24px;
-                position: relative;
-                top: 32px;
-                left: -30px;
+                position: absolute;
+                top: 72px;
+                left: 20px;
               }
 
             }
@@ -240,11 +265,11 @@
               &[data-mb="100"] {
                 span.text {
                   font-size: 28px;
-                  position: relative;
-                  top: 0px;
                   display: block;
-                  left: 100px;
-                  max-width: 110px;
+                  position: absolute;
+                  top: 72px;
+                  left: 25px;
+                  max-width: 150px;
                 }
               }
             }
@@ -346,13 +371,23 @@
 }
 @media screen and (max-width: 600px ) and (min-width: 321px) {
 
-
+  .unlimite-int{
+    h1.title{
+      padding: 50px 10px 0;
+    }
+  }
+  .tarifs{
+    p.sub-title-gray{
+      padding: 10px 10px 0;
+    }
+  }
   .individual-tarif {
     .wrap-1200 {
       .application {
 
         .row {
           .map-button {
+            top: 30px;
           }
         }
         .cc {
@@ -363,6 +398,83 @@
 
           }
         }
+      }
+    }
+  }
+  .comments-block {
+    background: @dark-green;
+    padding-bottom: 100px;
+    padding-top: 320px;
+  }
+  li.comment-item {
+    max-width: 280px;
+    position: relative;
+    .about-commentator {
+      display: flex;
+      vertical-align: top;
+      .image {
+        padding-right: 10px;
+        padding-left: 25px;
+        padding-top: 7px;
+      }
+
+      .commentator {
+        padding-top: 25px;
+        max-width: 300px;
+        padding-bottom: 30px;
+        p.name {
+          position: static;
+          width: 140px;
+          font-size: 18px;
+          font-family: @UbuntuBold;
+          color: #333333;
+        }
+        p.prof {
+          font-family: @Ubuntu;
+          color: #999999;
+          padding-top: 0;
+          font-size: 14px;
+          position: absolute;
+          width: 130px;
+          line-height: 22px;
+        }
+      }
+    }
+    .comment {
+      font-family: @Ubuntu;
+      font-size: 14px;
+      padding: 30px;
+      background: #f3f3d7;
+      border-radius: 20px;
+      max-width: 320px;
+      box-sizing: border-box;
+      top: -30px;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        background: url(../img/comment-icon.PNG) no-repeat;
+        width: 32px;
+        height: 24px;
+        position: absolute;
+        top: -23px;
+        left: 77px;
+      }
+      p {
+        color: #333333;
+        font-size: 14px;
+        line-height: 1.5em;
+        padding-bottom: 10px;
+        font-family: @Ubuntu;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+      strong{
+        font-family: @UbuntuBold;
+        color: #333333;
+        font-size: 14px;
+        line-height: 1.5em;
       }
     }
   }

@@ -328,26 +328,24 @@
         align-items: center;
     padding-bottom: 40px;
   }
-  .unlimite-int .list li.plus-item.wifi {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
   .unlimite-int .list li.plus-item p.plus-text {
-    padding-left: 70px;
+    padding-left: 0;
     position: static !important;
   }
-  .grid-comment {
-    -ms-flex-direction: column;
-        flex-direction: column;
+  .unlimite-int .list li.plus-item p.plus-text .wrap {
+    text-align: center;
+  }
+  .comments-block .grid-comment {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-align: center;
         -ms-grid-row-align: center;
         align-items: center;
   }
-  .grid-comment .comment-item {
+  .comments-block .grid-comment .comment-item {
     left: 0 !important;
   }
-  .grid-comment .terabite {
+  .comments-block .grid-comment .terabite {
     left: 0 !important;
   }
   .individual-tarif .wrap-1200 {
@@ -397,6 +395,34 @@
   }
   .unlimite-int .list li.plus-item.media .wrap {
     top: 28px;
+  }
+  .comments-block .grid-comment {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+  }
+  .comments-block .grid-comment .comment-item {
+    left: 0 !important;
+  }
+  .comments-block .grid-comment .terabite {
+    left: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .comments-block .grid-comment {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+  }
+  .comments-block .grid-comment .comment-item {
+    left: 0 !important;
+  }
+  .comments-block .grid-comment .terabite {
+    left: 0 !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -525,17 +551,17 @@
   }
   .tarifs .grid .col-1-2 .block-2 .hover-block p.tarif-name span.text {
     font-size: 24px;
-    position: relative;
-    top: 32px;
-    left: -30px;
+    position: absolute;
+    top: 72px;
+    left: 20px;
   }
   .tarifs .grid .col-1-2 .big-block .hover-block p.tarif-name[data-mb="100"] span.text {
     font-size: 28px;
-    position: relative;
-    top: 0px;
     display: block;
-    left: 100px;
-    max-width: 110px;
+    position: absolute;
+    top: 72px;
+    left: 25px;
+    max-width: 150px;
   }
   .dont-speed-down .speed-block {
     padding-top: 30px;
@@ -609,10 +635,96 @@
   }
 }
 @media screen and (max-width: 600px) and (min-width: 321px) {
+  .unlimite-int h1.title {
+    padding: 50px 10px 0;
+  }
+  .tarifs p.sub-title-gray {
+    padding: 10px 10px 0;
+  }
+  .individual-tarif .wrap-1200 .application .row .map-button {
+    top: 30px;
+  }
   .individual-tarif .wrap-1200 .application .cc {
     display: none;
     left: 34px;
     top: 15px;
+  }
+  .comments-block {
+    background: #379d47;
+    padding-bottom: 100px;
+    padding-top: 320px;
+  }
+  li.comment-item {
+    max-width: 280px;
+    position: relative;
+  }
+  li.comment-item .about-commentator {
+    display: -ms-flexbox;
+    display: flex;
+    vertical-align: top;
+  }
+  li.comment-item .about-commentator .image {
+    padding-right: 10px;
+    padding-left: 25px;
+    padding-top: 7px;
+  }
+  li.comment-item .about-commentator .commentator {
+    padding-top: 25px;
+    max-width: 300px;
+    padding-bottom: 30px;
+  }
+  li.comment-item .about-commentator .commentator p.name {
+    position: static;
+    width: 140px;
+    font-size: 18px;
+    font-family: UbuntuBold;
+    color: #333333;
+  }
+  li.comment-item .about-commentator .commentator p.prof {
+    font-family: Ubuntu;
+    color: #999999;
+    padding-top: 0;
+    font-size: 14px;
+    position: absolute;
+    width: 130px;
+    line-height: 22px;
+  }
+  li.comment-item .comment {
+    font-family: Ubuntu;
+    font-size: 14px;
+    padding: 30px;
+    background: #f3f3d7;
+    border-radius: 20px;
+    max-width: 320px;
+    box-sizing: border-box;
+    top: -30px;
+    position: relative;
+  }
+  li.comment-item .comment:before {
+    content: "";
+    display: block;
+    background: url(../img/comment-icon.PNG) no-repeat;
+    width: 32px;
+    height: 24px;
+    position: absolute;
+    top: -23px;
+    left: 77px;
+  }
+  li.comment-item .comment p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+    font-family: Ubuntu;
+  }
+  li.comment-item .comment p:last-child {
+    padding-bottom: 0;
+  }
+  li.comment-item .comment strong {
+    font-family: UbuntuBold;
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5em;
   }
 }
 @media screen and (max-width: 460px) {

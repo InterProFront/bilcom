@@ -6,35 +6,30 @@
         <div class="unlimite-int">
             <div class="wrap-1200">
                 @yield('header')
-                <h1 class="title">Безлимитный интернет в офис в Алматы</h1>
-                <p class="sub-title">{{$static_main_page->unlimit_text_field}}</p>
+                <h1 class="title">Безлимитный интернет в бизнес-центрах Алматы</h1>
                 <div class="plus-list">
                     <ul class="list">
                         <?php $i = 0;?>
                         @foreach($static_main_page->advantage_group as $item)
                             <?php $i++ ?>
                             @if($i == 1)
-                                <li class="plus-item modem">
+                                <li class="plus-item first">
                                     <div class="wrap">
-                                        <img src="/img/modem.png" alt="">
-                                        <img src="/img/modem-1.png" alt="" class="absolute item-1">
+                                        <img src="/img/plus.jpg" alt="">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
                             @elseif($i == 2)
-                                <li class="plus-item wifi">
+                                <li class="plus-item second">
                                     <div class="wrap">
-                                        @svg('wifi')
-                                        <img src="/img/wifi.png" alt="">
+                                        <img src="/img/plus.jpg" alt="">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
                             @elseif($i == 3)
-                                <li class="plus-item media">
+                                <li class="plus-item last">
                                     <div class="wrap">
-                                        <img src="/img/media.png" alt="">
-                                        <img src="/img/media-3.png" alt="" class="absolute item-1">
-                                        <img src="/img/media-4.png" alt="" class="absolute item-2">
+                                        <img src="/img/plus.jpg" alt="">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
@@ -42,6 +37,7 @@
                         @endforeach
                     </ul>
                 </div>
+                <p class="sub-title"><span class="orange">{{$static_main_page->unlimit_text_field}}</span></p>
             </div>
         </div>
 
@@ -57,7 +53,7 @@
                                 <div class="emitter"></div>
                                 <div class="hover-block t1" data-speed="500" data-live="150">
                                     <p class="tarif-name">5
-                                        <span class="text">Мб/сек</span>
+                                        <span class="text">Мбит/сек</span>
                                     </p>
                                     <p class="button-row">
                                         <button class="connect" href="#connect_tarif" data-mb="5 Мб/сек">Подключить</button>
@@ -68,7 +64,7 @@
                                 <div class="emitter"></div>
                                 <div class="hover-block t2" data-speed="500" data-live="100">
                                     <p class="tarif-name">10
-                                        <span class="text">Мб/сек</span>
+                                        <span class="text">Мбит/сек</span>
                                     </p>
                                     <p class="button-row">
                                         <button class="connect" href="#connect_tarif" data-mb="10 Мб/сек">Подключить</button>
@@ -80,7 +76,7 @@
                             <div class="emitter"></div>
                             <div class="hover-block bigest t1" data-speed="500" data-live="50" data-time="600">
                                 <p class="tarif-name">25
-                                    <span class="text">Мб/сек</span>
+                                    <span class="text">Мбит/сек</span>
                                 </p>
                                 <p class="button-row">
                                     <button class="connect" href="#connect_tarif" data-mb="25 Мб/сек">Подключить</button>
@@ -95,7 +91,7 @@
                                 <div class="emitter"></div>
                                 <div class="hover-block t3" data-speed="1000" data-live="40" data-time="450">
                                     <p class="tarif-name">50
-                                        <span class="text">Мб/сек</span>
+                                        <span class="text">Мбит/сек</span>
                                     </p>
                                     <p class="button-row">
                                         <button class="connect" href="#connect_tarif" data-mb="50 Мб/сек">Подключить</button>
@@ -106,7 +102,7 @@
                                 <div class="emitter"></div>
                                 <div class="hover-block t4" data-speed="1500" data-live="25" data-time="400">
                                     <p class="tarif-name" data-mb="75">75
-                                        <span class="text">Мб/сек</span>
+                                        <span class="text">Мбит/сек</span>
                                     </p>
                                     <p class="button-row">
                                         <button class="connect" href="#connect_tarif" data-mb="75 Мб/сек">Подключить</button>
@@ -118,7 +114,7 @@
                             <div class="emitter"></div>
                             <div class="hover-block bigest t2" data-speed="1000" data-live="30" data-time="500">
                                 <p class="tarif-name" data-mb="100">100
-                                    <span class="text">Мб/сек</span>
+                                    <span class="text">Мбит/сек</span>
                                 </p>
                                 <p class="button-row">
                                     <button class="connect" href="#connect_tarif" data-mb="100 Мб/сек">Подключить</button>
@@ -133,7 +129,6 @@
             <div class="wrap-1200">
                 <div class="speed-block">
                     <div class="col-1-2">
-                        <img src="/img/no-speed-down.png" alt="">
                     </div>
                     <div class="col-1-2">
                         <h2 class="title">Скорость не падает</h2>
@@ -206,9 +201,10 @@
                                                 <p class="prof">{{$item->prof_field}}</p>
                                             </div>
                                         </div>
-                                        <div class="comment">{!! $item->comment_text_field !!}</div>
-                                        <span class="comment-speed">{{$item->speed_field}} <i
-                                                    class="small">МБит</i></span>
+                                        <div class="comment">
+                                            <strong>Интернет {{$item->speed_field}} МБит/сек</strong>
+                                            {!! $item->comment_text_field !!}
+                                        </div>
                                     </li>
                                 @endif
                             @endforeach
@@ -231,9 +227,10 @@
                                                 <p class="prof">{{$item->prof_field}}</p>
                                             </div>
                                         </div>
-                                        <div class="comment">{!! $item->comment_text_field !!}</div>
-                                        <span class="comment-speed">{{$item->speed_field}} <i
-                                                    class="small">МБит</i></span>
+                                        <div class="comment">
+                                            <strong>Интернет {{$item->speed_field}} МБит/сек</strong>
+                                            {!! $item->comment_text_field !!}
+                                        </div>
                                     </li>
                                 @endif
                             @endforeach

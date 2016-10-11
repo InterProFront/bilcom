@@ -32,37 +32,28 @@ $(document).ready(function () {
             });
         }
     });
-   $(this).find('.plus-item').each( function(k, v) {
-       var el = this;
-       setTimeout(function () {
-           $(el).css('opacity','1');
-           if( $(el).hasClass('modem')){
-               $(el).find('.absolute').each( function(k, v) {
-                   var el = this;
-                   setTimeout(function () {
-                       $(el).css({opacity: 1, transform: "scale(1)"})
-                   }, k*400);
-               });
-           }
-           if( $(el).hasClass('wifi')){
-               $(el).find('.wifi').each( function(k, v) {
-                   var el = this;
-                   setTimeout(function () {
-                       $(el).css('opacity','1')
-                   }, k*200);
-               });
-           }
-           if( $(el).hasClass('media')){
-               $(el).find('.absolute').each( function(k, v) {
-                   var el = this;
-                   setTimeout(function () {
-                       $(el).css({opacity: 1, transform: "scale(1)"})
-                   }, k*150);
-               });
-           }
-       }, k*300);
-   });
-
+   // ======================
+   //$('.plus-item .wrap img').each( function(k, v) {
+   //    var el = this;
+   //    setTimeout(function () {
+   //        $(el).addClass('animated');
+   //        //$(el).find('.plus-text').css({opacity: 1});
+   //    }, k*500);
+   //});
+    setTimeout(function(){
+        $('.plus-item.first .wrap img').addClass('animated');
+        $('.plus-item.first  .plus-text').addClass('animated');
+    },250);
+    setTimeout(function(){
+        $('.plus-item.second .wrap img').addClass('animated');
+        $('.plus-item.second .plus-text').addClass('animated');
+    },500);
+    setTimeout(function(){
+        $('.plus-item.last .wrap img').addClass('animated');
+        $('.plus-item.last .plus-text').addClass('animated');
+    },750);
+    setTimeout(function(){$('.unlimite-int .sub-title .orange').addClass('active');}, 1500);
+   //=========================
     $('.map-button').magnificPopup({
         type: 'inline',
         midClick: true,
@@ -135,9 +126,9 @@ $(document).ready(function () {
             removeAfter = $(this).data('time') || 1000;
             speed = $(this).data('speed');
             if ($(this).hasClass('bigest')) {
-                height = 220;
+                height = 190;
             } else {
-                height = 260;
+                height = 190;
             }
             create();
         },
@@ -211,16 +202,16 @@ $(document).ready(function () {
         var top = $('.application h3.title').offset().top;
         if ((top - 450) <= $(this).scrollTop()) {
             $pc.css({
-                transform: ' translateX(' + -391 + 'px) translateY(' + -153 + 'px)'
+                transform: ' translateX(' + -420 + 'px) translateY(' + -173 + 'px)'
             });
             $media.css({
-                transform: ' translateX(' + 490 + 'px) translateY(' + -37 + 'px)'
+                transform: ' translateX(' + 420 + 'px) translateY(' + -173 + 'px)'
             });
             $docs.css({
-                transform: ' translateX(' + -391 + 'px) translateY(' + 192 + 'px)'
+                transform: ' translateX(' + -320 + 'px) translateY(' + 160 + 'px)'
             });
             $play.css({
-                transform: ' translateX(' + 350 + 'px) translateY(' + 240 + 'px)'
+                transform: ' translateX(' + 340 + 'px) translateY(' + 210 + 'px)'
             });
         } else {
             $pc.css({

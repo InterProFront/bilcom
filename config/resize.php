@@ -18,7 +18,7 @@ return [
     ],
     'comment_avatar' => [
         'sizes' => [
-            ['width' => 160, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 110, 'height' => null, 'sufix' => 'primary'],
             ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
