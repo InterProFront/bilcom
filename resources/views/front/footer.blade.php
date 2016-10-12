@@ -10,7 +10,7 @@
                                 href="{{$static_all_site->map_link_field}}">Карта проезда</a></p>
                 </div>
                 <div class="col-1-3">
-                    <p class="row-text">+7 {{$static_all_site->phone_field}}</p>
+                    <p class="row-text">{{$static_all_site->phone_field}}</p>
                 </div>
             </div>
             <div class="row-1-2">

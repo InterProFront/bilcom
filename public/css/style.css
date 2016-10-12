@@ -367,6 +367,8 @@ p.button-row button.connect:hover {
 .dont-speed-down .speed-block .col-1-2:first-child {
   padding-left: 20px;
   box-sizing: border-box;
+  height: 70px;
+  padding-top: 35px;
 }
 .dont-speed-down .speed-block .col-1-2:last-child {
   padding-left: 0px;
@@ -769,6 +771,42 @@ li.comment-item .comment strong {
 .application.white-popup .row.button .send-form:hover {
   cursor: pointer;
   background: #109d2c;
+}
+svg#arrow {
+  width: 100px;
+  height: 70px;
+}
+polygon#big-arrow {
+  width: 100px;
+  height: 100px;
+}
+polygon#small-arrow-2 {
+  transform: translateX(-85px);
+  transition: all 1s ease;
+  animation: Arrows 2s ;
+  animation-iteration-count: infinite;
+}
+polygon#small-arrow-1 {
+  transform: translateX(-85px);
+  transition: all 1s;
+  animation: Arrows 3s ;
+  animation-iteration-count: infinite;
+}
+@keyframes Arrows {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+@keyframes Arrows-2 {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
 }
 .how-to-connect .page-title {
   text-align: center;

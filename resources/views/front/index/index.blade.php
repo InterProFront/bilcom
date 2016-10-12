@@ -15,21 +15,21 @@
                             @if($i == 1)
                                 <li class="plus-item first">
                                     <div class="wrap">
-                                        <img src="/img/plus.jpg" alt="">
+                                        <img src="/img/2-modem.png" alt="">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
                             @elseif($i == 2)
                                 <li class="plus-item second">
                                     <div class="wrap">
-                                        <img src="/img/plus.jpg" alt="">
+                                        <img src="/img/1-calls.png" alt="">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
                             @elseif($i == 3)
                                 <li class="plus-item last">
                                     <div class="wrap">
-                                        <img src="/img/plus.jpg" alt="">
+                                        <img src="/img/3-hardw.png" alt="">
                                     </div>
                                     <p class="plus-text">{{$item->adv_text_field}}</p>
                                 </li>
@@ -129,6 +129,7 @@
             <div class="wrap-1200">
                 <div class="speed-block">
                     <div class="col-1-2">
+                        @svg('arrow')
                     </div>
                     <div class="col-1-2">
                         <h2 class="title">Скорость не падает</h2>
